@@ -1,0 +1,57 @@
+{
+    "version": "0.2",
+    "language": "en",
+    "words": [
+        "cust"
+    ],
+    "ignorePaths": [
+        "node_modules",
+        "venv"
+    ],
+    "cSpell.words": [
+        "bookavailability",
+        "Buisnesslayer",
+        "certifi",
+        "colorama",
+        "cust",
+        "dotenv",
+        "idna",
+        "itsdangerous",
+        "jsonify",
+        "loguru",
+        "setctime",
+        "urllib",
+        "Werkzeug",
+        "Customer",
+        "dbmanager",
+        "sqlalchemy",
+        "flaskjwt",
+        "jwt",
+        "auth",
+        "librarian"
+    ],
+    "python.analysis.extraPaths": [
+        "./backend/app",
+        "./backend",
+        "./backend/app/config",
+        "./backend/app/models"
+    ],
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": true,
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.useImportHeuristic": true,
+    "python.defaultInterpreterPath": "C:\\Users\\ran29\\OneDrive\\מסמכים\\p2libraryJB\\venv\\Scripts\\python.exe",
+    "python.analysis.diagnosticSeverityOverrides": {
+        "reportUnusedImport": "none",
+        "reportMissingImports": "warning",
+        "reportUndefinedVariable": "error"
+    },
+    "python.linting.flake8Enabled": true,
+    "python.linting.flake8Args": [
+        "--max-line-length=120"
+    ],
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    }
+}
