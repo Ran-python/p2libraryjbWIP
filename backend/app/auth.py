@@ -1,55 +1,47 @@
-from logging import root
-from os import name
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
 from werkzeug.security import generate_password_hash, check_password_hash
-from app.LibModels import db, Customer
+from app.LibModels import db, BookAvailability, Loan, Customer, Book
 from app.logger import log_info, log_error, log_warning
 from config.config import Config
 from datetime import datetime
 
-
 auth_bp = Blueprint('auth', __name__)
-
 
 # Initialize JWT
 jwt = JWTManager()
 
 # Static mapping of librarian username
-root = LIBRARIAN_USERNAME = "Ran"  # Librarian root user
+LIBRARIAN_USERNAME = "Ran"  # Librarian root user
 
+# Function to initialize JWT in the Flask app
+def init_auth(app):
+    app.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
+    jwt.init_app(app)
+
+def is_admin_or_root():
+    current_user = get_jwt_identity()
+    if current_user['role'] not in ['librarian', 'root']:
+        return False
+    return True
+
+# Customer CRUD operations
 @auth_bp.route('/customers', methods=['POST'])
+@jwt_required()
 def signup():
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
     try:
         data = request.get_json()
-
-        if not data or 'username' not in data or 'password' not in data or 'city' not in data:
-            log_error("Invalid signup attempt - missing fields")
+        if not data or 'username' not in data or 'password' not in data:
             return jsonify({"error": "Missing required fields"}), 400
-
-        # Check for duplicate user
-        existing_user = Customer.query.filter_by(name=data['username']).first()
-        if existing_user:
-            log_error(f"Signup failed - User {data['username']} already exists")
+        
+        if Customer.query.filter_by(name=data['username']).first():
             return jsonify({"error": "User already exists"}), 409
-
-        # Generate JWT token with unique timestamp
-        access_token = create_access_token(identity={
-            'username': data['username'],
-            'role': 'customer',
-            'timestamp': str(datetime.utcnow())  # Ensuring uniqueness
-        })
-
-        # Check for duplicate token
-        existing_token = Customer.query.filter_by(token=access_token).first()
-        if existing_token:
-            log_warning(f"Token already exists for user {existing_token.name}, generating new token.")
-            return jsonify({"error": "Duplicate token detected"}), 400
-
-        # Hash the password before storing it
+        
         hashed_password = generate_password_hash(data['password'])
-
-        # Create new customer
+        access_token = create_access_token(identity={'username': data['username'], 'role': 'customer'})
+        
         new_customer = Customer(
             name=data['username'],
             city=data.get('city', ''),
@@ -57,119 +49,138 @@ def signup():
             phone_number=data.get('phone_number'),
             birth_date=data.get('birth_date'),
             password_hash=hashed_password,
-            token=access_token,  # Store token in the database
-            active=True  # Set active status to True
+            token=access_token,
+            active=True
         )
-
         db.session.add(new_customer)
         db.session.commit()
 
-        log_info(f"New user {data['username']} registered successfully")
-
-        # Ensure the token is included in the response
-        return jsonify({
-            "message": "User registered successfully",
-            "access_token": access_token
-        }), 201
+        return jsonify({"message": "User registered successfully", "access_token": access_token}), 201
 
     except Exception as e:
-        log_error(f"Signup error: {str(e)}")
         return jsonify({"error": "Internal server error"}), 500
 
-
-@auth_bp.route('/login', methods=['POST'])
-def login():
-    try:
-        data = request.get_json()
-
-        # Find active user by username
-        user = Customer.query.filter_by(name=data['username'], active=True).first()
-
-        if not user or not check_password_hash(user.password_hash, data['password']):
-            log_error("Invalid username or password")
-            return jsonify({"error": "Invalid username or password"}), 401
-
-        # Invalidate old token (optional security measure)
-        if user.token:
-            log_info(f"User {user.name} had an active session, revoking old token.")
-            user.token = None  # Clear old token before issuing a new one
-            db.session.commit()
-
-        # Assign role based on username
-        role = "librarian" if user.name == LIBRARIAN_USERNAME else "customer"
-
-        # Generate JWT token with expiration time
-        access_token = create_access_token(identity={'username': user.name, 'role': role})
-
-        # Store token in the database
-        user.token = access_token
-        db.session.commit()
-
-        log_info(f"User {user.name} logged in successfully as {role}")
-        return jsonify({
-            "message": "Login successful",
-            "access_token": access_token,
-            "role": role
-        }), 200
-
-    except Exception as e:
-        log_error(f"Login error: {str(e)}")
-        return jsonify({"error": "Internal server error"}), 500
-
-
-# Function to initialize JWT in the Flask app
-def init_auth(app):
-    app.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
-    jwt.init_app(app)
-
-# read all customers
-@auth_bp.route('/customers', methods=['GET'])
-def customers():
-    try:
-        customers = Customer.query.all()
-        db.session.commit()
-        print(customers)
-        return jsonify([customer.to_dict() for customer in customers])
-        # return jsonify([customers.to_dict() for customer in customers])
-    finally:
-        print('done')
-
-# find by id
 @auth_bp.route('/customers/<int:id>', methods=['GET'])
-def customersById(id):
-    try:
-        # customer_id = request.args.get('id', type=int)
-        print("Customer id : "+str(id))
-        c = Customer.query.filter_by(id=id).first()
-        return jsonify(c.to_dict())
-        # return jsonify([item.to_dict() for item in c])
-    finally:
-        print('done')
+@jwt_required()
+def get_customer(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    customer = Customer.query.get_or_404(id)
+    return jsonify(customer.to_dict())
 
-#delete customer (make not active) 
-@auth_bp.route('/customers/<int:id>', methods=['DELETE'])
-def delete_customer(id):
-    try:
-        # customer_id = request.args.get('id', type=int)
-        cust = Customer.query.get(id)
-        setattr(cust, "active",False)
-        db.session.commit()
-        print(cust)
-        return jsonify(cust.to_dict())
-    finally:
-        print('done')
-        
-#update customer
 @auth_bp.route('/customers/<int:id>', methods=['PUT'])
-def update_user(id):
-    try:
-        data = request.get_json()
-        cust = Customer.query.get(id)
-        for field, value in data.items():
-            if hasattr(cust, field):
-                setattr(cust, field, value)
-        
-        db.session.commit()
-        return 'ok'
-    finally:
-        print("Done")
+@jwt_required()
+def update_customer(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    data = request.get_json()
+    customer = Customer.query.get_or_404(id)
+    for key, value in data.items():
+        if hasattr(customer, key):
+            setattr(customer, key, value)
+    db.session.commit()
+    return jsonify(customer.to_dict())
+
+@auth_bp.route('/customers/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_customer(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    customer = Customer.query.get_or_404(id)
+    customer.active = False
+    db.session.commit()
+    return jsonify({"message": "Customer deactivated"})
+
+# Book CRUD operations
+@auth_bp.route('/books', methods=['POST'])
+@jwt_required()
+def add_book():
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    data = request.get_json()
+    new_book = Book(**data)
+    db.session.add(new_book)
+    db.session.commit()
+    return jsonify(new_book.to_dict()), 201
+
+@auth_bp.route('/books/<int:id>', methods=['GET'])
+@jwt_required()
+def get_book(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    book = Book.query.get_or_404(id)
+    return jsonify(book.to_dict())
+
+@auth_bp.route('/books/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_book(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    data = request.get_json()
+    book = Book.query.get_or_404(id)
+    for key, value in data.items():
+        if hasattr(book, key):
+            setattr(book, key, value)
+    db.session.commit()
+    return jsonify(book.to_dict())
+
+@auth_bp.route('/books/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_book(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    book = Book.query.get_or_404(id)
+    book.active = False
+    db.session.commit()
+    return jsonify({"message": "Book deactivated"})
+
+# Loan CRUD operations
+@auth_bp.route('/loans', methods=['POST'])
+@jwt_required()
+def add_loan():
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    data = request.get_json()
+    new_loan = Loan(**data)
+    db.session.add(new_loan)
+    db.session.commit()
+    return jsonify(new_loan.to_dict()), 201
+
+@auth_bp.route('/loans/<int:id>', methods=['GET'])
+@jwt_required()
+def get_loan(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    loan = Loan.query.get_or_404(id)
+    return jsonify(loan.to_dict())
+
+@auth_bp.route('/loans/<int:id>', methods=['PUT'])
+@jwt_required()
+def update_loan(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    data = request.get_json()
+    loan = Loan.query.get_or_404(id)
+    for key, value in data.items():
+        if hasattr(loan, key):
+            setattr(loan, key, value)
+    db.session.commit()
+    return jsonify(loan.to_dict())
+
+@auth_bp.route('/loans/<int:id>', methods=['DELETE'])
+@jwt_required()
+def delete_loan(id):
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    loan = Loan.query.get_or_404(id)
+    loan.active = False
+    db.session.commit()
+    return jsonify({"message": "Loan deactivated"})
+
+@auth_bp.route('/loans/late', methods=['GET'])
+@jwt_required()
+def check_late_loans():
+    if not is_admin_or_root():
+        return jsonify({"error": "Unauthorized access"}), 403
+    late_loans = Loan.query.filter(Loan.due_date < datetime.utcnow(), Loan.returned == False).all()
+    return jsonify([loan.to_dict() for loan in late_loans])

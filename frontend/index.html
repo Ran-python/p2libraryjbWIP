@@ -1,127 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer CRUD</title>
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Library Management System - Login</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 400px;
+            margin-top: 100px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+        .btn {
+            width: 100%;
+        }
+    </style>
 </head>
-
 <body>
-    <h1>Customer Management</h1>
+    <div class="container text-center">
+        <h2>Library Management System</h2>
+        <form id="login-form" class="mt-4">
+            <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" id="username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" id="password" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        <p class="mt-3">Don't have an account? <a href="#" onclick="showSignup()">Sign Up</a></p>
+    </div>
 
-    <!-- Create Customer -->
-    <h2>Create Customer</h2>
-    <form id="createCustomerForm">
-        <input type="text" id="createName" placeholder="Name" required>
-        <input type="email" id="createEmail" placeholder="Email" required>
-        <button type="submit">Create</button>
-    </form>
-
-    <!-- Read All Customers -->
-    <h2>All Customers</h2>
-    <button onclick="getAllCustomers()">Fetch Customers</button>
-    <ul id="customerList"></ul>
-
-    <!-- Read Customer by ID -->
-    <h2>Get Customer by ID</h2>
-    <form id="getCustomerForm">
-        <input type="number" id="getId" placeholder="Customer ID" required>
-        <button type="submit">Get Customer</button>
-    </form>
-    <p id="customerDetails"></p>
-
-    <!-- Update Customer -->
-    <h2>Update Customer</h2>
-    <form id="updateCustomerForm">
-        <input type="number" id="updateId" placeholder="Customer ID" required>
-        <input type="text" id="updateName" placeholder="Name">
-        <input type="email" id="updateEmail" placeholder="Email">
-        <button type="submit">Update</button>
-    </form>
-
-    <!-- Delete Customer -->
-    <h2>Delete Customer</h2>
-    <form id="deleteCustomerForm">
-        <input type="number" id="deleteId" placeholder="Customer ID" required>
-        <button type="submit">Delete</button>
-    </form>
+    <div class="container text-center d-none" id="signup-container">
+        <h2>Sign Up</h2>
+        <form id="signup-form" class="mt-4">
+            <div class="mb-3">
+                <label for="signup-username" class="form-label">Username</label>
+                <input type="text" id="signup-username" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="signup-password" class="form-label">Password</label>
+                <input type="password" id="signup-password" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="role" class="form-label">Role</label>
+                <select id="role" class="form-select" required>
+                    <option value="customer">Customer</option>
+                    <option value="librarian">Librarian</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-success">Sign Up</button>
+        </form>
+        <p class="mt-3">Already have an account? <a href="#" onclick="showLogin()">Login</a></p>
+    </div>
 
     <script>
-        const baseUrl = "http://127.0.0.1:5000/auth/customers";
-
-        // Create Customer
-        document.getElementById("createCustomerForm").addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const name = document.getElementById("createName").value;
-            const email = document.getElementById("createEmail").value;
-            try {
-                const response = await axios.post(baseUrl, { name, email });
-                alert("Customer created: " + response.data.message);
-            } catch (error) {
-                alert("Error: " + error.response.data.error);
-            }
-        });
-
-        // Get All Customers
-        async function getAllCustomers() {
-            try {
-                const response = await axios.get(baseUrl);
-                const customers = response.data;
-                console.log(response.data)
-
-                const list = document.getElementById("customerList");
-                list.innerHTML = "";
-                customers.forEach((customer) => {
-                    console.log(customer)
-                    const li = document.createElement("li");
-                    li.textContent = `ID: ${customer.id}, Name: ${customer.name}, Email: ${customer.email}`;
-                    list.appendChild(li);
-                });
-            } catch (error) {
-                alert("Error: " + error.response.data.error);
-            }
+        function showSignup() {
+            document.getElementById('login-form').classList.add('d-none');
+            document.getElementById('signup-container').classList.remove('d-none');
         }
 
-        // Get Customer by ID
-        document.getElementById("getCustomerForm").addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const id = document.getElementById("getId").value;
+        function showLogin() {
+            document.getElementById('signup-container').classList.add('d-none');
+            document.getElementById('login-form').classList.remove('d-none');
+        }
+
+        document.getElementById('login-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+
             try {
-                const response = await axios.get(`${baseUrl}/${id}`);
-                document.getElementById("customerDetails").textContent = `ID: ${response.data.id}, Name: ${response.data.name}, Email: ${response.data.email}`;
+                const response = await axios.post('/auth/login', { username, password });
+                localStorage.setItem('token', response.data.access_token);
+                localStorage.setItem('role', response.data.role);
+
+                if (response.data.role === 'librarian') {
+                    window.location.href = 'librarian.html';
+                } else {
+                    window.location.href = 'user.html';
+                }
             } catch (error) {
-                alert("Error: " + error.response.data.error);
+                alert('Invalid username or password');
+                console.error(error);
             }
         });
 
-        // Update Customer
-        document.getElementById("updateCustomerForm").addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const id = document.getElementById("updateId").value;
-            const name = document.getElementById("updateName").value;
-            const email = document.getElementById("updateEmail").value;
-            try {
-                const response = await axios.put(baseUrl, { id, name, email });
-                alert("Customer updated: " + response.data.message);
-            } catch (error) {
-                alert("Error: " + error.response.data.error);
-            }
-        });
+        document.getElementById('signup-form').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const username = document.getElementById('signup-username').value;
+            const password = document.getElementById('signup-password').value;
+            const role = document.getElementById('role').value;
 
-        // Delete Customer
-        document.getElementById("deleteCustomerForm").addEventListener("submit", async (event) => {
-            event.preventDefault();
-            const id = document.getElementById("deleteId").value;
             try {
-                const response = await axios.delete(`${baseUrl}/${id}`);
-                alert("Customer deleted: " + response.data.message);
+                const response = await axios.post('/auth/customers', { username, password, role });
+                alert('Account created successfully. Please log in.');
+                showLogin();
             } catch (error) {
-                alert("Error: " + error.response.data.error);
+                alert('Failed to create account');
+                console.error(error);
             }
         });
     </script>
 </body>
-
 </html>

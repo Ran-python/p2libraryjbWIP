@@ -22,7 +22,7 @@ def create_app():
     db.init_app(app)
 
     with app.app_context():
-        # Correct import of models from app.LibModels
+        # Import models to ensure table creation
         from app.LibModels import Book, LoanType, Customer, Loan, MyLoan, BookAvailability
         db.create_all()
         print("Database tables created successfully!")

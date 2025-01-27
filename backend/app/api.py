@@ -1,23 +1,15 @@
 from flask import Blueprint, request, jsonify
-import flask
-import app
-from app.LibModels import db, Book, LoanType, Customer, Loan, MyLoan, BookAvailability, User
-from app.logger import log_info, log_error, log_warning, log_debug
 from flask_jwt_extended import jwt_required, get_jwt_identity
-from app.businesslayer import app as business_app
-
-app = (flask)
-BusinessLayer = business_app
-
+from app.logger import log_info, log_error, log_warning, log_debug
+from app.LibModels import BookAvailability, MyLoan
+from app.auth import auth_bp, init_auth
+from app.dbmanager import DBManager
 
 # Initialize Blueprint for API routes
 api_bp = Blueprint('api', __name__)
 
 # Logging messages
-log_info("Flask application is starting")
-log_debug("Debugging application configuration")
-log_warning("This is a warning")
-log_error("An error occurred while processing")
+log_info("API Blueprint initialized")
 
 # ------------------------------------------------------------
 # Helper Functions
@@ -43,10 +35,10 @@ def get_available_books():
     Accessible only to customers.
     """
     current_user = check_customer_role()
-    if isinstance(current_user, dict):  # if an error response, return it
+    if isinstance(current_user, tuple):  # if an error response, return it
         return current_user
 
-    books = BookAvailability.query.all()
+    books = DBManager.get_books()
     book_list = [
         {
             "book_id": book.book_id,
@@ -67,7 +59,7 @@ def get_my_loans():
     Endpoint for customers to view their own loans.
     """
     current_user = check_customer_role()
-    if isinstance(current_user, dict):
+    if isinstance(current_user, tuple):
         return current_user
 
     my_loans = MyLoan.query.filter_by(cust_id=current_user['id']).all()
@@ -89,9 +81,6 @@ def get_my_loans():
 # Book Management (CRUD)
 # ------------------------------------------------------------
 
-class BookAPI:
-    """Handles CRUD operations for books."""
-
 @api_bp.route('/books', methods=['POST', 'GET'])
 @jwt_required()
 def handle_books():
@@ -101,13 +90,17 @@ def handle_books():
             book_data = request.get_json()
             log_info(f"Received book creation request: {book_data}")
 
-            # Forward the data to BusinessLayer for processing
-            response, status_code = BusinessLayer.add_book(book_data)
-            return jsonify(response), status_code
+            # Forward the data to DBManager for processing
+            new_book = DBManager.create_book(book_data)
+            if new_book:
+                return jsonify(new_book.to_dict()), 201
+            else:
+                return jsonify({"error": "Failed to add book"}), 400
 
         elif request.method == 'GET':
-            # Return a message for GET requests
-            return jsonify({"message": "Use POST to add a book"}), 200
+            books = DBManager.get_books()
+            book_list = [book.to_dict() for book in books]
+            return jsonify(book_list), 200
 
     except Exception as e:
         log_error(f"Error processing book request: {str(e)}")
@@ -142,7 +135,3 @@ def user_dashboard():
     """
     current_user = get_jwt_identity()
     return jsonify({"message": f"Welcome {current_user['username']}!"})
-
-
-
-
