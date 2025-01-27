@@ -1,4 +1,5 @@
 from logging import root
+from os import name
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import create_access_token, jwt_required, get_jwt_identity, JWTManager
 from werkzeug.security import generate_password_hash, check_password_hash
@@ -7,7 +8,9 @@ from app.logger import log_info, log_error, log_warning
 from config.config import Config
 from datetime import datetime
 
+
 auth_bp = Blueprint('auth', __name__)
+
 
 # Initialize JWT
 jwt = JWTManager()
@@ -15,7 +18,7 @@ jwt = JWTManager()
 # Static mapping of librarian username
 root = LIBRARIAN_USERNAME = "Ran"  # Librarian root user
 
-@auth_bp.route('/signup', methods=['POST'])
+@auth_bp.route('/customers', methods=['POST'])
 def signup():
     try:
         data = request.get_json()
@@ -118,3 +121,55 @@ def login():
 def init_auth(app):
     app.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
     jwt.init_app(app)
+
+# read all customers
+@auth_bp.route('/customers', methods=['GET'])
+def customers():
+    try:
+        customers = Customer.query.all()
+        db.session.commit()
+        print(customers)
+        return jsonify([customer.to_dict() for customer in customers])
+        # return jsonify([customers.to_dict() for customer in customers])
+    finally:
+        print('done')
+
+# find by id
+@auth_bp.route('/customers/<int:id>', methods=['GET'])
+def customersById(id):
+    try:
+        # customer_id = request.args.get('id', type=int)
+        print("Customer id : "+str(id))
+        c = Customer.query.filter_by(id=id).first()
+        return jsonify(c.to_dict())
+        # return jsonify([item.to_dict() for item in c])
+    finally:
+        print('done')
+
+#delete customer (make not active) 
+@auth_bp.route('/customers/<int:id>', methods=['DELETE'])
+def delete_customer(id):
+    try:
+        # customer_id = request.args.get('id', type=int)
+        cust = Customer.query.get(id)
+        setattr(cust, "active",False)
+        db.session.commit()
+        print(cust)
+        return jsonify(cust.to_dict())
+    finally:
+        print('done')
+        
+#update customer
+@auth_bp.route('/customers/<int:id>', methods=['PUT'])
+def update_user(id):
+    try:
+        data = request.get_json()
+        cust = Customer.query.get(id)
+        for field, value in data.items():
+            if hasattr(cust, field):
+                setattr(cust, field, value)
+        
+        db.session.commit()
+        return 'ok'
+    finally:
+        print("Done")

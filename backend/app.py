@@ -8,10 +8,9 @@ from app.auth import auth_bp, init_auth  # Import auth blueprint and initializat
 from app.businesslayer import app as business_app
 from flask_cors import CORS  # Optional for cross-origin requests
 
-
-
 # Define Flask app 
 app = Flask(__name__)
+CORS(app, resources={r"/*": {"origins":"*"}})
 app.config.from_object(Config)
 app.config['JWT_SECRET_KEY'] = 'supersecretkey'  # Set a strong secret key for JWT
 

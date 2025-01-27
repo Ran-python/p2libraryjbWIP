@@ -103,6 +103,12 @@ class Customer(db.Model):
     def __repr__(self):
         return f"<Customer {self.name}, Active: {self.active}>"
 
+    def to_dict(self):
+        return {
+            'id': self.id,
+            'name': self.name,
+            'active': self.active
+        }
 
 # Loan Model
 class Loan(db.Model):

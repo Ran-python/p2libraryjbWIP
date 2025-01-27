@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer CRUD</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <h1>Customer Management</h1>
+
+    <!-- Create Customer -->
+    <h2>Create Customer</h2>
+    <form id="createCustomerForm">
+        <input type="text" id="createName" placeholder="Name" required>
+        <input type="email" id="createEmail" placeholder="Email" required>
+        <button type="submit">Create</button>
+    </form>
+
+    <!-- Read All Customers -->
+    <h2>All Customers</h2>
+    <button onclick="getAllCustomers()">Fetch Customers</button>
+    <ul id="customerList"></ul>
+
+    <!-- Read Customer by ID -->
+    <h2>Get Customer by ID</h2>
+    <form id="getCustomerForm">
+        <input type="number" id="getId" placeholder="Customer ID" required>
+        <button type="submit">Get Customer</button>
+    </form>
+    <p id="customerDetails"></p>
+
+    <!-- Update Customer -->
+    <h2>Update Customer</h2>
+    <form id="updateCustomerForm">
+        <input type="number" id="updateId" placeholder="Customer ID" required>
+        <input type="text" id="updateName" placeholder="Name">
+        <input type="email" id="updateEmail" placeholder="Email">
+        <button type="submit">Update</button>
+    </form>
+
+    <!-- Delete Customer -->
+    <h2>Delete Customer</h2>
+    <form id="deleteCustomerForm">
+        <input type="number" id="deleteId" placeholder="Customer ID" required>
+        <button type="submit">Delete</button>
+    </form>
+
+    <script>
+        const baseUrl = "http://127.0.0.1:5000/auth/customers";
+
+        // Create Customer
+        document.getElementById("createCustomerForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const name = document.getElementById("createName").value;
+            const email = document.getElementById("createEmail").value;
+            try {
+                const response = await axios.post(baseUrl, { name, email });
+                alert("Customer created: " + response.data.message);
+            } catch (error) {
+                alert("Error: " + error.response.data.error);
+            }
+        });
+
+        // Get All Customers
+        async function getAllCustomers() {
+            try {
+                const response = await axios.get(baseUrl);
+                const customers = response.data;
+                console.log(response.data)
+
+                const list = document.getElementById("customerList");
+                list.innerHTML = "";
+                customers.forEach((customer) => {
+                    console.log(customer)
+                    const li = document.createElement("li");
+                    li.textContent = `ID: ${customer.id}, Name: ${customer.name}, Email: ${customer.email}`;
+                    list.appendChild(li);
+                });
+            } catch (error) {
+                alert("Error: " + error.response.data.error);
+            }
+        }
+
+        // Get Customer by ID
+        document.getElementById("getCustomerForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const id = document.getElementById("getId").value;
+            try {
+                const response = await axios.get(`${baseUrl}/${id}`);
+                document.getElementById("customerDetails").textContent = `ID: ${response.data.id}, Name: ${response.data.name}, Email: ${response.data.email}`;
+            } catch (error) {
+                alert("Error: " + error.response.data.error);
+            }
+        });
+
+        // Update Customer
+        document.getElementById("updateCustomerForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const id = document.getElementById("updateId").value;
+            const name = document.getElementById("updateName").value;
+            const email = document.getElementById("updateEmail").value;
+            try {
+                const response = await axios.put(baseUrl, { id, name, email });
+                alert("Customer updated: " + response.data.message);
+            } catch (error) {
+                alert("Error: " + error.response.data.error);
+            }
+        });
+
+        // Delete Customer
+        document.getElementById("deleteCustomerForm").addEventListener("submit", async (event) => {
+            event.preventDefault();
+            const id = document.getElementById("deleteId").value;
+            try {
+                const response = await axios.delete(`${baseUrl}/${id}`);
+                alert("Customer deleted: " + response.data.message);
+            } catch (error) {
+                alert("Error: " + error.response.data.error);
+            }
+        });
+    </script>
+</body>
+
+</html>

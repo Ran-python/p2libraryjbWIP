@@ -1041,3 +1041,1385 @@ WHERE customers.name = %(name_1)s
  * Running on http://127.0.0.1:5000
 2025-01-27 10:58:19 - INFO - [33mPress CTRL+C to quit[0m
 2025-01-27 10:58:23 - INFO - 127.0.0.1 - - [27/Jan/2025 10:58:23] "[31m[1mPOST /api/books HTTP/1.1[0m" 422 -
+2025-01-27 20:17:42 - INFO - Flask application is starting
+2025-01-27 20:17:42 - WARNING - This is a warning
+2025-01-27 20:17:42 - ERROR - An error occurred while processing
+2025-01-27 20:17:43 - INFO - Flask application is starting
+2025-01-27 20:17:43 - WARNING - This is a warning
+2025-01-27 20:17:43 - ERROR - An error occurred while processing
+2025-01-27 20:17:43 - INFO - Flask application is starting
+2025-01-27 20:17:43 - WARNING - This is a warning
+2025-01-27 20:17:43 - ERROR - An error occurred while processing
+2025-01-27 20:17:43 - INFO - Flask application is starting
+2025-01-27 20:17:43 - WARNING - This is a warning
+2025-01-27 20:17:43 - ERROR - An error occurred while processing
+2025-01-27 20:17:43 - INFO - Flask application is starting
+2025-01-27 20:17:43 - WARNING - This is a warning
+2025-01-27 20:17:43 - ERROR - An error occurred while processing
+2025-01-27 20:17:43 - INFO - Starting Flask application
+2025-01-27 20:17:43 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:17:43 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:18:45 - INFO - 127.0.0.1 - - [27/Jan/2025 20:18:45] "[31m[1mGET /auth/signup HTTP/1.1[0m" 405 -
+2025-01-27 20:19:09 - ERROR - Invalid signup attempt - missing fields
+2025-01-27 20:19:09 - INFO - 127.0.0.1 - - [27/Jan/2025 20:19:09] "[31m[1mPOST /auth/signup HTTP/1.1[0m" 400 -
+2025-01-27 20:21:49 - INFO - User Ran had an active session, revoking old token.
+2025-01-27 20:21:49 - INFO - User Ran logged in successfully as librarian
+2025-01-27 20:21:49 - INFO - 127.0.0.1 - - [27/Jan/2025 20:21:49] "POST /auth/login HTTP/1.1" 200 -
+2025-01-27 20:29:25 - INFO - 127.0.0.1 - - [27/Jan/2025 20:29:25] "[33mGET /auth/customers HTTP/1.1[0m" 404 -
+2025-01-27 20:29:48 - INFO - 127.0.0.1 - - [27/Jan/2025 20:29:48] "[33mGET /auth/customers HTTP/1.1[0m" 404 -
+2025-01-27 20:30:12 - INFO - 127.0.0.1 - - [27/Jan/2025 20:30:12] "[33mGET /auth/customers HTTP/1.1[0m" 404 -
+2025-01-27 20:30:43 - INFO - Flask application is starting
+2025-01-27 20:30:43 - WARNING - This is a warning
+2025-01-27 20:30:43 - ERROR - An error occurred while processing
+2025-01-27 20:30:43 - INFO - Flask application is starting
+2025-01-27 20:30:43 - WARNING - This is a warning
+2025-01-27 20:30:43 - ERROR - An error occurred while processing
+2025-01-27 20:30:43 - INFO - Flask application is starting
+2025-01-27 20:30:43 - WARNING - This is a warning
+2025-01-27 20:30:43 - ERROR - An error occurred while processing
+2025-01-27 20:30:43 - INFO - Flask application is starting
+2025-01-27 20:30:43 - WARNING - This is a warning
+2025-01-27 20:30:43 - ERROR - An error occurred while processing
+2025-01-27 20:30:43 - INFO - Flask application is starting
+2025-01-27 20:30:43 - WARNING - This is a warning
+2025-01-27 20:30:43 - ERROR - An error occurred while processing
+2025-01-27 20:30:43 - INFO - Starting Flask application
+2025-01-27 20:30:43 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:30:43 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:30:48 - INFO - 127.0.0.1 - - [27/Jan/2025 20:30:48] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:30:48 - INFO - 127.0.0.1 - - [27/Jan/2025 20:30:48] "GET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 20:30:48 - INFO - 127.0.0.1 - - [27/Jan/2025 20:30:48] "GET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 20:30:49 - INFO - 127.0.0.1 - - [27/Jan/2025 20:30:49] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=kvNPLDdn0PxR9Dhyk4bE HTTP/1.1" 200 -
+2025-01-27 20:31:23 - INFO - Flask application is starting
+2025-01-27 20:31:23 - WARNING - This is a warning
+2025-01-27 20:31:23 - ERROR - An error occurred while processing
+2025-01-27 20:31:23 - INFO - Flask application is starting
+2025-01-27 20:31:23 - WARNING - This is a warning
+2025-01-27 20:31:23 - ERROR - An error occurred while processing
+2025-01-27 20:31:23 - INFO - Flask application is starting
+2025-01-27 20:31:23 - WARNING - This is a warning
+2025-01-27 20:31:23 - ERROR - An error occurred while processing
+2025-01-27 20:31:23 - INFO - Flask application is starting
+2025-01-27 20:31:23 - WARNING - This is a warning
+2025-01-27 20:31:23 - ERROR - An error occurred while processing
+2025-01-27 20:31:23 - INFO - Flask application is starting
+2025-01-27 20:31:23 - WARNING - This is a warning
+2025-01-27 20:31:23 - ERROR - An error occurred while processing
+2025-01-27 20:31:23 - INFO - Starting Flask application
+2025-01-27 20:31:23 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:31:23 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:31:26 - INFO - 127.0.0.1 - - [27/Jan/2025 20:31:26] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:31:26 - INFO - 127.0.0.1 - - [27/Jan/2025 20:31:26] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:31:26 - INFO - 127.0.0.1 - - [27/Jan/2025 20:31:26] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:31:26 - INFO - 127.0.0.1 - - [27/Jan/2025 20:31:26] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=R5WwyeSwIbN9kdhq4qBw HTTP/1.1" 200 -
+2025-01-27 20:32:18 - INFO - Flask application is starting
+2025-01-27 20:32:18 - WARNING - This is a warning
+2025-01-27 20:32:18 - ERROR - An error occurred while processing
+2025-01-27 20:32:18 - INFO - Flask application is starting
+2025-01-27 20:32:18 - WARNING - This is a warning
+2025-01-27 20:32:18 - ERROR - An error occurred while processing
+2025-01-27 20:32:18 - INFO - Flask application is starting
+2025-01-27 20:32:18 - WARNING - This is a warning
+2025-01-27 20:32:18 - ERROR - An error occurred while processing
+2025-01-27 20:32:18 - INFO - Flask application is starting
+2025-01-27 20:32:18 - WARNING - This is a warning
+2025-01-27 20:32:18 - ERROR - An error occurred while processing
+2025-01-27 20:32:19 - INFO - Flask application is starting
+2025-01-27 20:32:19 - WARNING - This is a warning
+2025-01-27 20:32:19 - ERROR - An error occurred while processing
+2025-01-27 20:32:19 - INFO - Starting Flask application
+2025-01-27 20:32:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:32:19 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:32:27 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:27] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:32:27 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:27] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:32:27 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:27] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:32:27 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:27] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=trVq2IEjQTjxl7tJ7bTy HTTP/1.1" 200 -
+2025-01-27 20:32:40 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:40] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:32:40 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:40] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:32:40 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:40] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:32:40 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:40] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=trVq2IEjQTjxl7tJ7bTy HTTP/1.1[0m" 304 -
+2025-01-27 20:32:49 - INFO - Flask application is starting
+2025-01-27 20:32:49 - WARNING - This is a warning
+2025-01-27 20:32:49 - ERROR - An error occurred while processing
+2025-01-27 20:32:49 - INFO - Flask application is starting
+2025-01-27 20:32:49 - WARNING - This is a warning
+2025-01-27 20:32:49 - ERROR - An error occurred while processing
+2025-01-27 20:32:49 - INFO - Flask application is starting
+2025-01-27 20:32:49 - WARNING - This is a warning
+2025-01-27 20:32:49 - ERROR - An error occurred while processing
+2025-01-27 20:32:49 - INFO - Flask application is starting
+2025-01-27 20:32:49 - WARNING - This is a warning
+2025-01-27 20:32:49 - ERROR - An error occurred while processing
+2025-01-27 20:32:50 - INFO - Flask application is starting
+2025-01-27 20:32:50 - WARNING - This is a warning
+2025-01-27 20:32:50 - ERROR - An error occurred while processing
+2025-01-27 20:32:50 - INFO - Starting Flask application
+2025-01-27 20:32:50 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:32:50 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:32:56 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:56] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:32:57 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:57] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:32:57 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:57] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:32:57 - INFO - 127.0.0.1 - - [27/Jan/2025 20:32:57] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=ZiwNNdwolGkmATIZC4f9 HTTP/1.1" 200 -
+2025-01-27 20:34:13 - INFO - Flask application is starting
+2025-01-27 20:34:13 - WARNING - This is a warning
+2025-01-27 20:34:13 - ERROR - An error occurred while processing
+2025-01-27 20:34:13 - INFO - Flask application is starting
+2025-01-27 20:34:13 - WARNING - This is a warning
+2025-01-27 20:34:13 - ERROR - An error occurred while processing
+2025-01-27 20:34:13 - INFO - Flask application is starting
+2025-01-27 20:34:13 - WARNING - This is a warning
+2025-01-27 20:34:13 - ERROR - An error occurred while processing
+2025-01-27 20:34:13 - INFO - Flask application is starting
+2025-01-27 20:34:13 - WARNING - This is a warning
+2025-01-27 20:34:13 - ERROR - An error occurred while processing
+2025-01-27 20:34:13 - INFO - Flask application is starting
+2025-01-27 20:34:13 - WARNING - This is a warning
+2025-01-27 20:34:13 - ERROR - An error occurred while processing
+2025-01-27 20:34:13 - INFO - Starting Flask application
+2025-01-27 20:34:13 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:34:13 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:34:16 - INFO - 127.0.0.1 - - [27/Jan/2025 20:34:16] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:34:16 - INFO - 127.0.0.1 - - [27/Jan/2025 20:34:16] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:34:16 - INFO - 127.0.0.1 - - [27/Jan/2025 20:34:16] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:34:16 - INFO - 127.0.0.1 - - [27/Jan/2025 20:34:16] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=eFobSiuW1IeD5xooOmRk HTTP/1.1" 200 -
+2025-01-27 20:35:36 - INFO - Flask application is starting
+2025-01-27 20:35:36 - WARNING - This is a warning
+2025-01-27 20:35:36 - ERROR - An error occurred while processing
+2025-01-27 20:35:36 - INFO - Flask application is starting
+2025-01-27 20:35:36 - WARNING - This is a warning
+2025-01-27 20:35:36 - ERROR - An error occurred while processing
+2025-01-27 20:35:36 - INFO - Flask application is starting
+2025-01-27 20:35:36 - WARNING - This is a warning
+2025-01-27 20:35:36 - ERROR - An error occurred while processing
+2025-01-27 20:35:36 - INFO - Flask application is starting
+2025-01-27 20:35:36 - WARNING - This is a warning
+2025-01-27 20:35:36 - ERROR - An error occurred while processing
+2025-01-27 20:35:36 - INFO - Flask application is starting
+2025-01-27 20:35:36 - WARNING - This is a warning
+2025-01-27 20:35:36 - ERROR - An error occurred while processing
+2025-01-27 20:35:36 - INFO - Starting Flask application
+2025-01-27 20:35:36 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:35:36 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:35:41 - INFO - 127.0.0.1 - - [27/Jan/2025 20:35:41] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 20:37:10 - INFO - Flask application is starting
+2025-01-27 20:37:10 - WARNING - This is a warning
+2025-01-27 20:37:10 - ERROR - An error occurred while processing
+2025-01-27 20:37:10 - INFO - Flask application is starting
+2025-01-27 20:37:10 - WARNING - This is a warning
+2025-01-27 20:37:10 - ERROR - An error occurred while processing
+2025-01-27 20:37:10 - INFO - Flask application is starting
+2025-01-27 20:37:10 - WARNING - This is a warning
+2025-01-27 20:37:10 - ERROR - An error occurred while processing
+2025-01-27 20:37:10 - INFO - Flask application is starting
+2025-01-27 20:37:10 - WARNING - This is a warning
+2025-01-27 20:37:10 - ERROR - An error occurred while processing
+2025-01-27 20:37:10 - INFO - Flask application is starting
+2025-01-27 20:37:10 - WARNING - This is a warning
+2025-01-27 20:37:10 - ERROR - An error occurred while processing
+2025-01-27 20:37:10 - INFO - Starting Flask application
+2025-01-27 20:37:10 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:37:10 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:37:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:37:14] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:37:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:37:14] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:37:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:37:14] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:37:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:37:14] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=LIhyqFgrg1NG0DtrFUo7 HTTP/1.1" 200 -
+2025-01-27 20:38:20 - INFO - Flask application is starting
+2025-01-27 20:38:20 - WARNING - This is a warning
+2025-01-27 20:38:20 - ERROR - An error occurred while processing
+2025-01-27 20:38:20 - INFO - Flask application is starting
+2025-01-27 20:38:20 - WARNING - This is a warning
+2025-01-27 20:38:20 - ERROR - An error occurred while processing
+2025-01-27 20:38:20 - INFO - Flask application is starting
+2025-01-27 20:38:20 - WARNING - This is a warning
+2025-01-27 20:38:20 - ERROR - An error occurred while processing
+2025-01-27 20:38:20 - INFO - Flask application is starting
+2025-01-27 20:38:20 - WARNING - This is a warning
+2025-01-27 20:38:20 - ERROR - An error occurred while processing
+2025-01-27 20:38:20 - INFO - Flask application is starting
+2025-01-27 20:38:20 - WARNING - This is a warning
+2025-01-27 20:38:20 - ERROR - An error occurred while processing
+2025-01-27 20:38:20 - INFO - Starting Flask application
+2025-01-27 20:38:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:38:20 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:38:23 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:23] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:38:23 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:23] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:38:23 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:23] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:38:23 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:23] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=RyvSUkZMkEzLIiIUfflj HTTP/1.1" 200 -
+2025-01-27 20:38:31 - INFO - Flask application is starting
+2025-01-27 20:38:31 - WARNING - This is a warning
+2025-01-27 20:38:31 - ERROR - An error occurred while processing
+2025-01-27 20:38:31 - INFO - Flask application is starting
+2025-01-27 20:38:31 - WARNING - This is a warning
+2025-01-27 20:38:31 - ERROR - An error occurred while processing
+2025-01-27 20:38:31 - INFO - Flask application is starting
+2025-01-27 20:38:31 - WARNING - This is a warning
+2025-01-27 20:38:31 - ERROR - An error occurred while processing
+2025-01-27 20:38:31 - INFO - Flask application is starting
+2025-01-27 20:38:31 - WARNING - This is a warning
+2025-01-27 20:38:31 - ERROR - An error occurred while processing
+2025-01-27 20:38:31 - INFO - Flask application is starting
+2025-01-27 20:38:31 - WARNING - This is a warning
+2025-01-27 20:38:31 - ERROR - An error occurred while processing
+2025-01-27 20:38:31 - INFO - Starting Flask application
+2025-01-27 20:38:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:38:31 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:38:32 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:32] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:38:32 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:32] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:38:32 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:32] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:38:32 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:32] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=9wUtqM2HqYZKRrT2fUXy HTTP/1.1" 200 -
+2025-01-27 20:38:41 - INFO - Flask application is starting
+2025-01-27 20:38:41 - WARNING - This is a warning
+2025-01-27 20:38:41 - ERROR - An error occurred while processing
+2025-01-27 20:38:41 - INFO - Flask application is starting
+2025-01-27 20:38:41 - WARNING - This is a warning
+2025-01-27 20:38:41 - ERROR - An error occurred while processing
+2025-01-27 20:38:41 - INFO - Flask application is starting
+2025-01-27 20:38:41 - WARNING - This is a warning
+2025-01-27 20:38:41 - ERROR - An error occurred while processing
+2025-01-27 20:38:41 - INFO - Flask application is starting
+2025-01-27 20:38:41 - WARNING - This is a warning
+2025-01-27 20:38:41 - ERROR - An error occurred while processing
+2025-01-27 20:38:41 - INFO - Flask application is starting
+2025-01-27 20:38:41 - WARNING - This is a warning
+2025-01-27 20:38:41 - ERROR - An error occurred while processing
+2025-01-27 20:38:41 - INFO - Starting Flask application
+2025-01-27 20:38:41 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:38:41 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:38:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:42] "[35m[1mGET /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 20:38:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:42] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:38:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:42] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:38:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:38:42] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=Lppt9WLm3ZSXRb0p1hwk HTTP/1.1" 200 -
+2025-01-27 20:40:31 - INFO - Flask application is starting
+2025-01-27 20:40:31 - WARNING - This is a warning
+2025-01-27 20:40:31 - ERROR - An error occurred while processing
+2025-01-27 20:40:31 - INFO - Flask application is starting
+2025-01-27 20:40:31 - WARNING - This is a warning
+2025-01-27 20:40:31 - ERROR - An error occurred while processing
+2025-01-27 20:40:31 - INFO - Flask application is starting
+2025-01-27 20:40:31 - WARNING - This is a warning
+2025-01-27 20:40:31 - ERROR - An error occurred while processing
+2025-01-27 20:40:31 - INFO - Flask application is starting
+2025-01-27 20:40:31 - WARNING - This is a warning
+2025-01-27 20:40:31 - ERROR - An error occurred while processing
+2025-01-27 20:40:31 - INFO - Flask application is starting
+2025-01-27 20:40:31 - WARNING - This is a warning
+2025-01-27 20:40:31 - ERROR - An error occurred while processing
+2025-01-27 20:40:31 - INFO - Starting Flask application
+2025-01-27 20:40:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:40:31 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:40:32 - INFO - 127.0.0.1 - - [27/Jan/2025 20:40:32] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 20:48:44 - INFO - Flask application is starting
+2025-01-27 20:48:44 - WARNING - This is a warning
+2025-01-27 20:48:44 - ERROR - An error occurred while processing
+2025-01-27 20:48:44 - INFO - Flask application is starting
+2025-01-27 20:48:44 - WARNING - This is a warning
+2025-01-27 20:48:44 - ERROR - An error occurred while processing
+2025-01-27 20:48:44 - INFO - Flask application is starting
+2025-01-27 20:48:44 - WARNING - This is a warning
+2025-01-27 20:48:44 - ERROR - An error occurred while processing
+2025-01-27 20:48:44 - INFO - Flask application is starting
+2025-01-27 20:48:44 - WARNING - This is a warning
+2025-01-27 20:48:44 - ERROR - An error occurred while processing
+2025-01-27 20:48:44 - INFO - Flask application is starting
+2025-01-27 20:48:44 - WARNING - This is a warning
+2025-01-27 20:48:44 - ERROR - An error occurred while processing
+2025-01-27 20:48:55 - INFO - Flask application is starting
+2025-01-27 20:48:55 - WARNING - This is a warning
+2025-01-27 20:48:55 - ERROR - An error occurred while processing
+2025-01-27 20:48:55 - INFO - Flask application is starting
+2025-01-27 20:48:55 - WARNING - This is a warning
+2025-01-27 20:48:55 - ERROR - An error occurred while processing
+2025-01-27 20:48:55 - INFO - Flask application is starting
+2025-01-27 20:48:55 - WARNING - This is a warning
+2025-01-27 20:48:55 - ERROR - An error occurred while processing
+2025-01-27 20:48:55 - INFO - Flask application is starting
+2025-01-27 20:48:55 - WARNING - This is a warning
+2025-01-27 20:48:55 - ERROR - An error occurred while processing
+2025-01-27 20:48:55 - INFO - Flask application is starting
+2025-01-27 20:48:55 - WARNING - This is a warning
+2025-01-27 20:48:55 - ERROR - An error occurred while processing
+2025-01-27 20:49:24 - INFO - Flask application is starting
+2025-01-27 20:49:24 - WARNING - This is a warning
+2025-01-27 20:49:24 - ERROR - An error occurred while processing
+2025-01-27 20:49:24 - INFO - Flask application is starting
+2025-01-27 20:49:24 - WARNING - This is a warning
+2025-01-27 20:49:24 - ERROR - An error occurred while processing
+2025-01-27 20:49:24 - INFO - Flask application is starting
+2025-01-27 20:49:24 - WARNING - This is a warning
+2025-01-27 20:49:24 - ERROR - An error occurred while processing
+2025-01-27 20:49:24 - INFO - Flask application is starting
+2025-01-27 20:49:24 - WARNING - This is a warning
+2025-01-27 20:49:24 - ERROR - An error occurred while processing
+2025-01-27 20:49:24 - INFO - Flask application is starting
+2025-01-27 20:49:24 - WARNING - This is a warning
+2025-01-27 20:49:24 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Flask application is starting
+2025-01-27 20:49:31 - WARNING - This is a warning
+2025-01-27 20:49:31 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Flask application is starting
+2025-01-27 20:49:31 - WARNING - This is a warning
+2025-01-27 20:49:31 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Flask application is starting
+2025-01-27 20:49:31 - WARNING - This is a warning
+2025-01-27 20:49:31 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Flask application is starting
+2025-01-27 20:49:31 - WARNING - This is a warning
+2025-01-27 20:49:31 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Flask application is starting
+2025-01-27 20:49:31 - WARNING - This is a warning
+2025-01-27 20:49:31 - ERROR - An error occurred while processing
+2025-01-27 20:49:31 - INFO - Starting Flask application
+2025-01-27 20:49:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:49:31 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:49:46 - INFO - Flask application is starting
+2025-01-27 20:49:46 - WARNING - This is a warning
+2025-01-27 20:49:46 - ERROR - An error occurred while processing
+2025-01-27 20:49:46 - INFO - Flask application is starting
+2025-01-27 20:49:46 - WARNING - This is a warning
+2025-01-27 20:49:46 - ERROR - An error occurred while processing
+2025-01-27 20:49:46 - INFO - Flask application is starting
+2025-01-27 20:49:46 - WARNING - This is a warning
+2025-01-27 20:49:46 - ERROR - An error occurred while processing
+2025-01-27 20:49:46 - INFO - Flask application is starting
+2025-01-27 20:49:46 - WARNING - This is a warning
+2025-01-27 20:49:46 - ERROR - An error occurred while processing
+2025-01-27 20:49:46 - INFO - Flask application is starting
+2025-01-27 20:49:46 - WARNING - This is a warning
+2025-01-27 20:49:46 - ERROR - An error occurred while processing
+2025-01-27 20:51:27 - INFO - Flask application is starting
+2025-01-27 20:51:27 - WARNING - This is a warning
+2025-01-27 20:51:27 - ERROR - An error occurred while processing
+2025-01-27 20:51:27 - INFO - Flask application is starting
+2025-01-27 20:51:27 - WARNING - This is a warning
+2025-01-27 20:51:27 - ERROR - An error occurred while processing
+2025-01-27 20:51:27 - INFO - Flask application is starting
+2025-01-27 20:51:27 - WARNING - This is a warning
+2025-01-27 20:51:27 - ERROR - An error occurred while processing
+2025-01-27 20:51:27 - INFO - Flask application is starting
+2025-01-27 20:51:27 - WARNING - This is a warning
+2025-01-27 20:51:27 - ERROR - An error occurred while processing
+2025-01-27 20:51:27 - INFO - Flask application is starting
+2025-01-27 20:51:27 - WARNING - This is a warning
+2025-01-27 20:51:27 - ERROR - An error occurred while processing
+2025-01-27 20:51:52 - INFO - Flask application is starting
+2025-01-27 20:51:52 - WARNING - This is a warning
+2025-01-27 20:51:52 - ERROR - An error occurred while processing
+2025-01-27 20:51:52 - INFO - Flask application is starting
+2025-01-27 20:51:52 - WARNING - This is a warning
+2025-01-27 20:51:52 - ERROR - An error occurred while processing
+2025-01-27 20:51:53 - INFO - Flask application is starting
+2025-01-27 20:51:53 - WARNING - This is a warning
+2025-01-27 20:51:53 - ERROR - An error occurred while processing
+2025-01-27 20:51:53 - INFO - Flask application is starting
+2025-01-27 20:51:53 - WARNING - This is a warning
+2025-01-27 20:51:53 - ERROR - An error occurred while processing
+2025-01-27 20:51:53 - INFO - Flask application is starting
+2025-01-27 20:51:53 - WARNING - This is a warning
+2025-01-27 20:51:53 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Flask application is starting
+2025-01-27 20:52:04 - WARNING - This is a warning
+2025-01-27 20:52:04 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Flask application is starting
+2025-01-27 20:52:04 - WARNING - This is a warning
+2025-01-27 20:52:04 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Flask application is starting
+2025-01-27 20:52:04 - WARNING - This is a warning
+2025-01-27 20:52:04 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Flask application is starting
+2025-01-27 20:52:04 - WARNING - This is a warning
+2025-01-27 20:52:04 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Flask application is starting
+2025-01-27 20:52:04 - WARNING - This is a warning
+2025-01-27 20:52:04 - ERROR - An error occurred while processing
+2025-01-27 20:52:04 - INFO - Starting Flask application
+2025-01-27 20:52:04 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:52:04 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:53:06 - INFO - Flask application is starting
+2025-01-27 20:53:06 - WARNING - This is a warning
+2025-01-27 20:53:06 - ERROR - An error occurred while processing
+2025-01-27 20:53:06 - INFO - Flask application is starting
+2025-01-27 20:53:06 - WARNING - This is a warning
+2025-01-27 20:53:06 - ERROR - An error occurred while processing
+2025-01-27 20:53:06 - INFO - Flask application is starting
+2025-01-27 20:53:06 - WARNING - This is a warning
+2025-01-27 20:53:06 - ERROR - An error occurred while processing
+2025-01-27 20:53:06 - INFO - Flask application is starting
+2025-01-27 20:53:06 - WARNING - This is a warning
+2025-01-27 20:53:06 - ERROR - An error occurred while processing
+2025-01-27 20:53:06 - INFO - Flask application is starting
+2025-01-27 20:53:06 - WARNING - This is a warning
+2025-01-27 20:53:06 - ERROR - An error occurred while processing
+2025-01-27 20:53:06 - INFO - Starting Flask application
+2025-01-27 20:53:06 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:53:06 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:53:10 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:10] "[33mGET /auth/customers/1 HTTP/1.1[0m" 404 -
+2025-01-27 20:53:19 - INFO - Flask application is starting
+2025-01-27 20:53:19 - WARNING - This is a warning
+2025-01-27 20:53:19 - ERROR - An error occurred while processing
+2025-01-27 20:53:19 - INFO - Flask application is starting
+2025-01-27 20:53:19 - WARNING - This is a warning
+2025-01-27 20:53:19 - ERROR - An error occurred while processing
+2025-01-27 20:53:20 - INFO - Flask application is starting
+2025-01-27 20:53:20 - WARNING - This is a warning
+2025-01-27 20:53:20 - ERROR - An error occurred while processing
+2025-01-27 20:53:20 - INFO - Flask application is starting
+2025-01-27 20:53:20 - WARNING - This is a warning
+2025-01-27 20:53:20 - ERROR - An error occurred while processing
+2025-01-27 20:53:20 - INFO - Flask application is starting
+2025-01-27 20:53:20 - WARNING - This is a warning
+2025-01-27 20:53:20 - ERROR - An error occurred while processing
+2025-01-27 20:53:20 - INFO - Starting Flask application
+2025-01-27 20:53:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:53:20 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:53:22 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:22] "[33mGET /auth/customers/1 HTTP/1.1[0m" 404 -
+2025-01-27 20:53:34 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:34] "[35m[1mGET /auth/customers/id HTTP/1.1[0m" 500 -
+2025-01-27 20:53:35 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:35] "GET /auth/customers/id?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 20:53:35 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:35] "GET /auth/customers/id?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 20:53:35 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:35] "GET /auth/customers/id?__debugger__=yes&cmd=resource&f=console.png&s=L3UmjPBt37jgnXBVvvoS HTTP/1.1" 200 -
+2025-01-27 20:53:51 - INFO - 127.0.0.1 - - [27/Jan/2025 20:53:51] "[33mGET /auth/customers/1 HTTP/1.1[0m" 404 -
+2025-01-27 20:54:43 - INFO - Flask application is starting
+2025-01-27 20:54:43 - WARNING - This is a warning
+2025-01-27 20:54:43 - ERROR - An error occurred while processing
+2025-01-27 20:54:43 - INFO - Flask application is starting
+2025-01-27 20:54:43 - WARNING - This is a warning
+2025-01-27 20:54:43 - ERROR - An error occurred while processing
+2025-01-27 20:54:43 - INFO - Flask application is starting
+2025-01-27 20:54:43 - WARNING - This is a warning
+2025-01-27 20:54:43 - ERROR - An error occurred while processing
+2025-01-27 20:54:43 - INFO - Flask application is starting
+2025-01-27 20:54:43 - WARNING - This is a warning
+2025-01-27 20:54:43 - ERROR - An error occurred while processing
+2025-01-27 20:54:43 - INFO - Flask application is starting
+2025-01-27 20:54:43 - WARNING - This is a warning
+2025-01-27 20:54:43 - ERROR - An error occurred while processing
+2025-01-27 20:54:43 - INFO - Starting Flask application
+2025-01-27 20:54:43 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:54:43 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:54:47 - INFO - 127.0.0.1 - - [27/Jan/2025 20:54:47] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 20:54:47 - INFO - 127.0.0.1 - - [27/Jan/2025 20:54:47] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 20:54:47 - INFO - 127.0.0.1 - - [27/Jan/2025 20:54:47] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 20:54:47 - INFO - 127.0.0.1 - - [27/Jan/2025 20:54:47] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=x6o0NjsE33nKVQIDYcVq HTTP/1.1" 200 -
+2025-01-27 20:55:12 - INFO - Flask application is starting
+2025-01-27 20:55:12 - WARNING - This is a warning
+2025-01-27 20:55:12 - ERROR - An error occurred while processing
+2025-01-27 20:55:12 - INFO - Flask application is starting
+2025-01-27 20:55:12 - WARNING - This is a warning
+2025-01-27 20:55:12 - ERROR - An error occurred while processing
+2025-01-27 20:55:12 - INFO - Flask application is starting
+2025-01-27 20:55:12 - WARNING - This is a warning
+2025-01-27 20:55:12 - ERROR - An error occurred while processing
+2025-01-27 20:55:12 - INFO - Flask application is starting
+2025-01-27 20:55:12 - WARNING - This is a warning
+2025-01-27 20:55:12 - ERROR - An error occurred while processing
+2025-01-27 20:55:12 - INFO - Flask application is starting
+2025-01-27 20:55:12 - WARNING - This is a warning
+2025-01-27 20:55:12 - ERROR - An error occurred while processing
+2025-01-27 20:55:12 - INFO - Starting Flask application
+2025-01-27 20:55:12 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:55:12 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:55:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:14] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 20:55:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:14] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:55:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:14] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:55:14 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:14] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=hRUEPDRZ4xQ2j69n1Nrx HTTP/1.1" 200 -
+2025-01-27 20:55:51 - INFO - Flask application is starting
+2025-01-27 20:55:51 - WARNING - This is a warning
+2025-01-27 20:55:51 - ERROR - An error occurred while processing
+2025-01-27 20:55:51 - INFO - Flask application is starting
+2025-01-27 20:55:51 - WARNING - This is a warning
+2025-01-27 20:55:51 - ERROR - An error occurred while processing
+2025-01-27 20:55:51 - INFO - Flask application is starting
+2025-01-27 20:55:51 - WARNING - This is a warning
+2025-01-27 20:55:51 - ERROR - An error occurred while processing
+2025-01-27 20:55:51 - INFO - Flask application is starting
+2025-01-27 20:55:51 - WARNING - This is a warning
+2025-01-27 20:55:51 - ERROR - An error occurred while processing
+2025-01-27 20:55:51 - INFO - Flask application is starting
+2025-01-27 20:55:51 - WARNING - This is a warning
+2025-01-27 20:55:51 - ERROR - An error occurred while processing
+2025-01-27 20:55:52 - INFO - Starting Flask application
+2025-01-27 20:55:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:55:52 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:55:55 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:55] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 20:55:55 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:55] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:55:55 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:55] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:55:55 - INFO - 127.0.0.1 - - [27/Jan/2025 20:55:55] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=QNPc7baA8c6oVXkxyY1X HTTP/1.1" 200 -
+2025-01-27 20:56:40 - INFO - Flask application is starting
+2025-01-27 20:56:40 - WARNING - This is a warning
+2025-01-27 20:56:40 - ERROR - An error occurred while processing
+2025-01-27 20:56:40 - INFO - Flask application is starting
+2025-01-27 20:56:40 - WARNING - This is a warning
+2025-01-27 20:56:40 - ERROR - An error occurred while processing
+2025-01-27 20:56:40 - INFO - Flask application is starting
+2025-01-27 20:56:40 - WARNING - This is a warning
+2025-01-27 20:56:40 - ERROR - An error occurred while processing
+2025-01-27 20:56:40 - INFO - Flask application is starting
+2025-01-27 20:56:40 - WARNING - This is a warning
+2025-01-27 20:56:40 - ERROR - An error occurred while processing
+2025-01-27 20:56:40 - INFO - Flask application is starting
+2025-01-27 20:56:40 - WARNING - This is a warning
+2025-01-27 20:56:40 - ERROR - An error occurred while processing
+2025-01-27 20:56:40 - INFO - Starting Flask application
+2025-01-27 20:56:40 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:56:40 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:56:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:56:42] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 20:56:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:56:42] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:56:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:56:42] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:56:42 - INFO - 127.0.0.1 - - [27/Jan/2025 20:56:42] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=YXJHKetRcw1r26vB5Ep0 HTTP/1.1" 200 -
+2025-01-27 20:59:01 - INFO - Flask application is starting
+2025-01-27 20:59:01 - WARNING - This is a warning
+2025-01-27 20:59:01 - ERROR - An error occurred while processing
+2025-01-27 20:59:01 - INFO - Flask application is starting
+2025-01-27 20:59:01 - WARNING - This is a warning
+2025-01-27 20:59:01 - ERROR - An error occurred while processing
+2025-01-27 20:59:01 - INFO - Flask application is starting
+2025-01-27 20:59:01 - WARNING - This is a warning
+2025-01-27 20:59:01 - ERROR - An error occurred while processing
+2025-01-27 20:59:01 - INFO - Flask application is starting
+2025-01-27 20:59:01 - WARNING - This is a warning
+2025-01-27 20:59:01 - ERROR - An error occurred while processing
+2025-01-27 20:59:01 - INFO - Flask application is starting
+2025-01-27 20:59:01 - WARNING - This is a warning
+2025-01-27 20:59:01 - ERROR - An error occurred while processing
+2025-01-27 20:59:01 - INFO - Starting Flask application
+2025-01-27 20:59:01 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:59:01 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:59:14 - INFO - Flask application is starting
+2025-01-27 20:59:14 - WARNING - This is a warning
+2025-01-27 20:59:14 - ERROR - An error occurred while processing
+2025-01-27 20:59:14 - INFO - Flask application is starting
+2025-01-27 20:59:14 - WARNING - This is a warning
+2025-01-27 20:59:14 - ERROR - An error occurred while processing
+2025-01-27 20:59:14 - INFO - Flask application is starting
+2025-01-27 20:59:14 - WARNING - This is a warning
+2025-01-27 20:59:14 - ERROR - An error occurred while processing
+2025-01-27 20:59:14 - INFO - Flask application is starting
+2025-01-27 20:59:14 - WARNING - This is a warning
+2025-01-27 20:59:14 - ERROR - An error occurred while processing
+2025-01-27 20:59:14 - INFO - Flask application is starting
+2025-01-27 20:59:14 - WARNING - This is a warning
+2025-01-27 20:59:14 - ERROR - An error occurred while processing
+2025-01-27 20:59:14 - INFO - Starting Flask application
+2025-01-27 20:59:14 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 20:59:14 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 20:59:17 - INFO - 127.0.0.1 - - [27/Jan/2025 20:59:17] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 20:59:17 - INFO - 127.0.0.1 - - [27/Jan/2025 20:59:17] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 20:59:17 - INFO - 127.0.0.1 - - [27/Jan/2025 20:59:17] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 20:59:17 - INFO - 127.0.0.1 - - [27/Jan/2025 20:59:17] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=155yHAfajybanamxNcpC HTTP/1.1" 200 -
+2025-01-27 21:01:11 - INFO - Flask application is starting
+2025-01-27 21:01:11 - WARNING - This is a warning
+2025-01-27 21:01:11 - ERROR - An error occurred while processing
+2025-01-27 21:01:11 - INFO - Flask application is starting
+2025-01-27 21:01:11 - WARNING - This is a warning
+2025-01-27 21:01:11 - ERROR - An error occurred while processing
+2025-01-27 21:01:11 - INFO - Flask application is starting
+2025-01-27 21:01:11 - WARNING - This is a warning
+2025-01-27 21:01:11 - ERROR - An error occurred while processing
+2025-01-27 21:01:11 - INFO - Flask application is starting
+2025-01-27 21:01:11 - WARNING - This is a warning
+2025-01-27 21:01:11 - ERROR - An error occurred while processing
+2025-01-27 21:01:11 - INFO - Flask application is starting
+2025-01-27 21:01:11 - WARNING - This is a warning
+2025-01-27 21:01:11 - ERROR - An error occurred while processing
+2025-01-27 21:01:11 - INFO - Starting Flask application
+2025-01-27 21:01:11 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:01:11 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:01:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:15] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:01:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:15] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:01:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:15] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:01:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:15] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=4sKAEcFWEMrrg5ROVRg1 HTTP/1.1" 200 -
+2025-01-27 21:01:32 - INFO - Flask application is starting
+2025-01-27 21:01:32 - WARNING - This is a warning
+2025-01-27 21:01:32 - ERROR - An error occurred while processing
+2025-01-27 21:01:32 - INFO - Flask application is starting
+2025-01-27 21:01:32 - WARNING - This is a warning
+2025-01-27 21:01:32 - ERROR - An error occurred while processing
+2025-01-27 21:01:32 - INFO - Flask application is starting
+2025-01-27 21:01:32 - WARNING - This is a warning
+2025-01-27 21:01:32 - ERROR - An error occurred while processing
+2025-01-27 21:01:32 - INFO - Flask application is starting
+2025-01-27 21:01:32 - WARNING - This is a warning
+2025-01-27 21:01:32 - ERROR - An error occurred while processing
+2025-01-27 21:01:32 - INFO - Flask application is starting
+2025-01-27 21:01:32 - WARNING - This is a warning
+2025-01-27 21:01:32 - ERROR - An error occurred while processing
+2025-01-27 21:01:32 - INFO - Starting Flask application
+2025-01-27 21:01:32 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:01:32 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:01:34 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:34] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:01:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:36] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:01:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:36] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:01:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:01:36] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=LR7g10g5Q5P4HcjKks7f HTTP/1.1" 200 -
+2025-01-27 21:02:19 - INFO - Flask application is starting
+2025-01-27 21:02:19 - WARNING - This is a warning
+2025-01-27 21:02:19 - ERROR - An error occurred while processing
+2025-01-27 21:02:19 - INFO - Flask application is starting
+2025-01-27 21:02:19 - WARNING - This is a warning
+2025-01-27 21:02:19 - ERROR - An error occurred while processing
+2025-01-27 21:02:19 - INFO - Flask application is starting
+2025-01-27 21:02:19 - WARNING - This is a warning
+2025-01-27 21:02:19 - ERROR - An error occurred while processing
+2025-01-27 21:02:19 - INFO - Flask application is starting
+2025-01-27 21:02:19 - WARNING - This is a warning
+2025-01-27 21:02:19 - ERROR - An error occurred while processing
+2025-01-27 21:02:19 - INFO - Flask application is starting
+2025-01-27 21:02:19 - WARNING - This is a warning
+2025-01-27 21:02:19 - ERROR - An error occurred while processing
+2025-01-27 21:02:19 - INFO - Starting Flask application
+2025-01-27 21:02:19 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:02:19 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:02:22 - INFO - 127.0.0.1 - - [27/Jan/2025 21:02:22] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:02:26 - INFO - 127.0.0.1 - - [27/Jan/2025 21:02:26] "GET /auth/customers/5 HTTP/1.1" 200 -
+2025-01-27 21:14:22 - INFO - Flask application is starting
+2025-01-27 21:14:22 - WARNING - This is a warning
+2025-01-27 21:14:22 - ERROR - An error occurred while processing
+2025-01-27 21:14:22 - INFO - Flask application is starting
+2025-01-27 21:14:22 - WARNING - This is a warning
+2025-01-27 21:14:22 - ERROR - An error occurred while processing
+2025-01-27 21:14:23 - INFO - Flask application is starting
+2025-01-27 21:14:23 - WARNING - This is a warning
+2025-01-27 21:14:23 - ERROR - An error occurred while processing
+2025-01-27 21:14:23 - INFO - Flask application is starting
+2025-01-27 21:14:23 - WARNING - This is a warning
+2025-01-27 21:14:23 - ERROR - An error occurred while processing
+2025-01-27 21:14:23 - INFO - Flask application is starting
+2025-01-27 21:14:23 - WARNING - This is a warning
+2025-01-27 21:14:23 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Flask application is starting
+2025-01-27 21:14:34 - WARNING - This is a warning
+2025-01-27 21:14:34 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Flask application is starting
+2025-01-27 21:14:34 - WARNING - This is a warning
+2025-01-27 21:14:34 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Flask application is starting
+2025-01-27 21:14:34 - WARNING - This is a warning
+2025-01-27 21:14:34 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Flask application is starting
+2025-01-27 21:14:34 - WARNING - This is a warning
+2025-01-27 21:14:34 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Flask application is starting
+2025-01-27 21:14:34 - WARNING - This is a warning
+2025-01-27 21:14:34 - ERROR - An error occurred while processing
+2025-01-27 21:14:34 - INFO - Starting Flask application
+2025-01-27 21:14:34 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:14:34 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:14:40 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:40] "DELETE /auth/customers/5 HTTP/1.1" 200 -
+2025-01-27 21:14:50 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:50] "[35m[1mGET /auth/customers/5 HTTP/1.1[0m" 500 -
+2025-01-27 21:14:50 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:50] "GET /auth/customers/5?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 21:14:50 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:50] "GET /auth/customers/5?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 21:14:50 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:50] "GET /auth/customers/5?__debugger__=yes&cmd=resource&f=console.png&s=ff82HOzHmtZVIOhYEPsV HTTP/1.1" 200 -
+2025-01-27 21:14:55 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:55] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:14:55 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:55] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:14:55 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:55] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:14:55 - INFO - 127.0.0.1 - - [27/Jan/2025 21:14:55] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=ff82HOzHmtZVIOhYEPsV HTTP/1.1" 200 -
+2025-01-27 21:15:44 - INFO - Flask application is starting
+2025-01-27 21:15:44 - WARNING - This is a warning
+2025-01-27 21:15:44 - ERROR - An error occurred while processing
+2025-01-27 21:15:44 - INFO - Flask application is starting
+2025-01-27 21:15:44 - WARNING - This is a warning
+2025-01-27 21:15:44 - ERROR - An error occurred while processing
+2025-01-27 21:15:44 - INFO - Flask application is starting
+2025-01-27 21:15:44 - WARNING - This is a warning
+2025-01-27 21:15:44 - ERROR - An error occurred while processing
+2025-01-27 21:15:44 - INFO - Flask application is starting
+2025-01-27 21:15:44 - WARNING - This is a warning
+2025-01-27 21:15:44 - ERROR - An error occurred while processing
+2025-01-27 21:15:44 - INFO - Flask application is starting
+2025-01-27 21:15:44 - WARNING - This is a warning
+2025-01-27 21:15:44 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Flask application is starting
+2025-01-27 21:15:53 - WARNING - This is a warning
+2025-01-27 21:15:53 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Flask application is starting
+2025-01-27 21:15:53 - WARNING - This is a warning
+2025-01-27 21:15:53 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Flask application is starting
+2025-01-27 21:15:53 - WARNING - This is a warning
+2025-01-27 21:15:53 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Flask application is starting
+2025-01-27 21:15:53 - WARNING - This is a warning
+2025-01-27 21:15:53 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Flask application is starting
+2025-01-27 21:15:53 - WARNING - This is a warning
+2025-01-27 21:15:53 - ERROR - An error occurred while processing
+2025-01-27 21:15:53 - INFO - Starting Flask application
+2025-01-27 21:15:53 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:15:53 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:15:58 - INFO - 127.0.0.1 - - [27/Jan/2025 21:15:58] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:15:59 - INFO - 127.0.0.1 - - [27/Jan/2025 21:15:59] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:15:59 - INFO - 127.0.0.1 - - [27/Jan/2025 21:15:59] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:15:59 - INFO - 127.0.0.1 - - [27/Jan/2025 21:15:59] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=3q64SpKbB9pD6byS4Lko HTTP/1.1" 200 -
+2025-01-27 21:16:30 - INFO - Flask application is starting
+2025-01-27 21:16:30 - WARNING - This is a warning
+2025-01-27 21:16:30 - ERROR - An error occurred while processing
+2025-01-27 21:16:30 - INFO - Flask application is starting
+2025-01-27 21:16:30 - WARNING - This is a warning
+2025-01-27 21:16:30 - ERROR - An error occurred while processing
+2025-01-27 21:16:30 - INFO - Flask application is starting
+2025-01-27 21:16:30 - WARNING - This is a warning
+2025-01-27 21:16:30 - ERROR - An error occurred while processing
+2025-01-27 21:16:30 - INFO - Flask application is starting
+2025-01-27 21:16:30 - WARNING - This is a warning
+2025-01-27 21:16:30 - ERROR - An error occurred while processing
+2025-01-27 21:16:30 - INFO - Flask application is starting
+2025-01-27 21:16:30 - WARNING - This is a warning
+2025-01-27 21:16:30 - ERROR - An error occurred while processing
+2025-01-27 21:16:30 - INFO - Starting Flask application
+2025-01-27 21:16:30 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:16:30 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:16:33 - INFO - 127.0.0.1 - - [27/Jan/2025 21:16:33] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:17:44 - INFO - Flask application is starting
+2025-01-27 21:17:44 - WARNING - This is a warning
+2025-01-27 21:17:44 - ERROR - An error occurred while processing
+2025-01-27 21:17:44 - INFO - Flask application is starting
+2025-01-27 21:17:44 - WARNING - This is a warning
+2025-01-27 21:17:44 - ERROR - An error occurred while processing
+2025-01-27 21:17:44 - INFO - Flask application is starting
+2025-01-27 21:17:44 - WARNING - This is a warning
+2025-01-27 21:17:44 - ERROR - An error occurred while processing
+2025-01-27 21:17:44 - INFO - Flask application is starting
+2025-01-27 21:17:44 - WARNING - This is a warning
+2025-01-27 21:17:44 - ERROR - An error occurred while processing
+2025-01-27 21:17:44 - INFO - Flask application is starting
+2025-01-27 21:17:44 - WARNING - This is a warning
+2025-01-27 21:17:44 - ERROR - An error occurred while processing
+2025-01-27 21:17:44 - INFO - Starting Flask application
+2025-01-27 21:17:44 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:17:44 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:17:47 - INFO - 127.0.0.1 - - [27/Jan/2025 21:17:47] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:17:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:17:52] "[35m[1mDELETE /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:17:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:17:52] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:17:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:17:52] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:17:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:17:52] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=kMnVLs7lHrpm3lqBw2CW HTTP/1.1" 200 -
+2025-01-27 21:19:01 - INFO - Flask application is starting
+2025-01-27 21:19:01 - WARNING - This is a warning
+2025-01-27 21:19:01 - ERROR - An error occurred while processing
+2025-01-27 21:19:01 - INFO - Flask application is starting
+2025-01-27 21:19:01 - WARNING - This is a warning
+2025-01-27 21:19:01 - ERROR - An error occurred while processing
+2025-01-27 21:19:01 - INFO - Flask application is starting
+2025-01-27 21:19:01 - WARNING - This is a warning
+2025-01-27 21:19:01 - ERROR - An error occurred while processing
+2025-01-27 21:19:01 - INFO - Flask application is starting
+2025-01-27 21:19:01 - WARNING - This is a warning
+2025-01-27 21:19:01 - ERROR - An error occurred while processing
+2025-01-27 21:19:01 - INFO - Flask application is starting
+2025-01-27 21:19:01 - WARNING - This is a warning
+2025-01-27 21:19:01 - ERROR - An error occurred while processing
+2025-01-27 21:19:02 - INFO - Starting Flask application
+2025-01-27 21:19:02 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:19:02 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:19:05 - INFO - 127.0.0.1 - - [27/Jan/2025 21:19:05] "DELETE /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:20:04 - INFO - Flask application is starting
+2025-01-27 21:20:04 - WARNING - This is a warning
+2025-01-27 21:20:04 - ERROR - An error occurred while processing
+2025-01-27 21:20:04 - INFO - Flask application is starting
+2025-01-27 21:20:04 - WARNING - This is a warning
+2025-01-27 21:20:04 - ERROR - An error occurred while processing
+2025-01-27 21:20:05 - INFO - Flask application is starting
+2025-01-27 21:20:05 - WARNING - This is a warning
+2025-01-27 21:20:05 - ERROR - An error occurred while processing
+2025-01-27 21:20:05 - INFO - Flask application is starting
+2025-01-27 21:20:05 - WARNING - This is a warning
+2025-01-27 21:20:05 - ERROR - An error occurred while processing
+2025-01-27 21:20:05 - INFO - Flask application is starting
+2025-01-27 21:20:05 - WARNING - This is a warning
+2025-01-27 21:20:05 - ERROR - An error occurred while processing
+2025-01-27 21:20:05 - INFO - Starting Flask application
+2025-01-27 21:20:05 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:20:05 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:20:07 - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:07] "DELETE /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:20:40 - INFO - Flask application is starting
+2025-01-27 21:20:40 - WARNING - This is a warning
+2025-01-27 21:20:40 - ERROR - An error occurred while processing
+2025-01-27 21:20:40 - INFO - Flask application is starting
+2025-01-27 21:20:40 - WARNING - This is a warning
+2025-01-27 21:20:40 - ERROR - An error occurred while processing
+2025-01-27 21:20:40 - INFO - Flask application is starting
+2025-01-27 21:20:40 - WARNING - This is a warning
+2025-01-27 21:20:40 - ERROR - An error occurred while processing
+2025-01-27 21:20:40 - INFO - Flask application is starting
+2025-01-27 21:20:40 - WARNING - This is a warning
+2025-01-27 21:20:40 - ERROR - An error occurred while processing
+2025-01-27 21:20:40 - INFO - Flask application is starting
+2025-01-27 21:20:40 - WARNING - This is a warning
+2025-01-27 21:20:40 - ERROR - An error occurred while processing
+2025-01-27 21:20:40 - INFO - Starting Flask application
+2025-01-27 21:20:40 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:20:40 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:20:46 - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:46] "DELETE /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:20:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:20:52] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:21:11 - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:11] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:21:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:15] "DELETE /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:21:54 - INFO - Flask application is starting
+2025-01-27 21:21:54 - WARNING - This is a warning
+2025-01-27 21:21:54 - ERROR - An error occurred while processing
+2025-01-27 21:21:54 - INFO - Flask application is starting
+2025-01-27 21:21:54 - WARNING - This is a warning
+2025-01-27 21:21:54 - ERROR - An error occurred while processing
+2025-01-27 21:21:54 - INFO - Flask application is starting
+2025-01-27 21:21:54 - WARNING - This is a warning
+2025-01-27 21:21:54 - ERROR - An error occurred while processing
+2025-01-27 21:21:54 - INFO - Flask application is starting
+2025-01-27 21:21:54 - WARNING - This is a warning
+2025-01-27 21:21:54 - ERROR - An error occurred while processing
+2025-01-27 21:21:54 - INFO - Flask application is starting
+2025-01-27 21:21:54 - WARNING - This is a warning
+2025-01-27 21:21:54 - ERROR - An error occurred while processing
+2025-01-27 21:21:54 - INFO - Starting Flask application
+2025-01-27 21:21:54 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:21:54 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:21:56 - INFO - 127.0.0.1 - - [27/Jan/2025 21:21:56] "DELETE /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:22:00 - INFO - 127.0.0.1 - - [27/Jan/2025 21:22:00] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 21:22:54 - INFO - Flask application is starting
+2025-01-27 21:22:54 - WARNING - This is a warning
+2025-01-27 21:22:54 - ERROR - An error occurred while processing
+2025-01-27 21:22:54 - INFO - Flask application is starting
+2025-01-27 21:22:54 - WARNING - This is a warning
+2025-01-27 21:22:54 - ERROR - An error occurred while processing
+2025-01-27 21:22:54 - INFO - Flask application is starting
+2025-01-27 21:22:54 - WARNING - This is a warning
+2025-01-27 21:22:54 - ERROR - An error occurred while processing
+2025-01-27 21:22:54 - INFO - Flask application is starting
+2025-01-27 21:22:54 - WARNING - This is a warning
+2025-01-27 21:22:54 - ERROR - An error occurred while processing
+2025-01-27 21:22:54 - INFO - Flask application is starting
+2025-01-27 21:22:54 - WARNING - This is a warning
+2025-01-27 21:22:54 - ERROR - An error occurred while processing
+2025-01-27 21:22:54 - INFO - Starting Flask application
+2025-01-27 21:22:54 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:22:54 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 21:22:56] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 21:22:56] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 21:22:56] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 21:22:56] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=z7xVGDEQPV1KVZsC7W7z HTTP/1.1" 200 -
+2025-01-27 21:23:24 - INFO - Flask application is starting
+2025-01-27 21:23:24 - WARNING - This is a warning
+2025-01-27 21:23:24 - ERROR - An error occurred while processing
+2025-01-27 21:23:24 - INFO - Flask application is starting
+2025-01-27 21:23:24 - WARNING - This is a warning
+2025-01-27 21:23:24 - ERROR - An error occurred while processing
+2025-01-27 21:23:24 - INFO - Flask application is starting
+2025-01-27 21:23:24 - WARNING - This is a warning
+2025-01-27 21:23:24 - ERROR - An error occurred while processing
+2025-01-27 21:23:24 - INFO - Flask application is starting
+2025-01-27 21:23:24 - WARNING - This is a warning
+2025-01-27 21:23:24 - ERROR - An error occurred while processing
+2025-01-27 21:23:24 - INFO - Flask application is starting
+2025-01-27 21:23:24 - WARNING - This is a warning
+2025-01-27 21:23:24 - ERROR - An error occurred while processing
+2025-01-27 21:23:24 - INFO - Starting Flask application
+2025-01-27 21:23:24 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:23:24 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:23:26 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:26] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
+2025-01-27 21:23:26 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:26] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:23:26 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:26] "[36mGET /auth/customers/1?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:23:26 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:26] "GET /auth/customers/1?__debugger__=yes&cmd=resource&f=console.png&s=32rPSP6TXQzrpB734tZj HTTP/1.1" 200 -
+2025-01-27 21:23:28 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:28] "[35m[1mGET /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:23:28 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:28] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2025-01-27 21:23:28 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:28] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2025-01-27 21:23:28 - INFO - 127.0.0.1 - - [27/Jan/2025 21:23:28] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=32rPSP6TXQzrpB734tZj HTTP/1.1" 200 -
+2025-01-27 21:24:11 - INFO - Flask application is starting
+2025-01-27 21:24:11 - WARNING - This is a warning
+2025-01-27 21:24:11 - ERROR - An error occurred while processing
+2025-01-27 21:24:11 - INFO - Flask application is starting
+2025-01-27 21:24:11 - WARNING - This is a warning
+2025-01-27 21:24:11 - ERROR - An error occurred while processing
+2025-01-27 21:24:11 - INFO - Flask application is starting
+2025-01-27 21:24:11 - WARNING - This is a warning
+2025-01-27 21:24:11 - ERROR - An error occurred while processing
+2025-01-27 21:24:11 - INFO - Flask application is starting
+2025-01-27 21:24:11 - WARNING - This is a warning
+2025-01-27 21:24:11 - ERROR - An error occurred while processing
+2025-01-27 21:24:11 - INFO - Flask application is starting
+2025-01-27 21:24:11 - WARNING - This is a warning
+2025-01-27 21:24:11 - ERROR - An error occurred while processing
+2025-01-27 21:24:11 - INFO - Starting Flask application
+2025-01-27 21:24:11 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:24:11 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:24:13 - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:13] "[35m[1mGET /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:24:13 - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:13] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:24:13 - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:13] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:24:13 - INFO - 127.0.0.1 - - [27/Jan/2025 21:24:13] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=j3yd06sixENmgF1s2530 HTTP/1.1" 200 -
+2025-01-27 21:28:20 - INFO - Flask application is starting
+2025-01-27 21:28:20 - WARNING - This is a warning
+2025-01-27 21:28:20 - ERROR - An error occurred while processing
+2025-01-27 21:28:20 - INFO - Flask application is starting
+2025-01-27 21:28:20 - WARNING - This is a warning
+2025-01-27 21:28:20 - ERROR - An error occurred while processing
+2025-01-27 21:28:20 - INFO - Flask application is starting
+2025-01-27 21:28:20 - WARNING - This is a warning
+2025-01-27 21:28:20 - ERROR - An error occurred while processing
+2025-01-27 21:28:20 - INFO - Flask application is starting
+2025-01-27 21:28:20 - WARNING - This is a warning
+2025-01-27 21:28:20 - ERROR - An error occurred while processing
+2025-01-27 21:28:20 - INFO - Flask application is starting
+2025-01-27 21:28:20 - WARNING - This is a warning
+2025-01-27 21:28:20 - ERROR - An error occurred while processing
+2025-01-27 21:28:20 - INFO - Starting Flask application
+2025-01-27 21:28:20 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:28:20 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:28:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:28:53] "[35m[1mPOST /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 21:28:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:28:53] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:28:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:28:53] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:28:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:28:53] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=d6Ru0k8mxmNfJSLsqhPg HTTP/1.1" 200 -
+2025-01-27 21:29:15 - INFO - Flask application is starting
+2025-01-27 21:29:15 - WARNING - This is a warning
+2025-01-27 21:29:15 - ERROR - An error occurred while processing
+2025-01-27 21:29:15 - INFO - Flask application is starting
+2025-01-27 21:29:15 - WARNING - This is a warning
+2025-01-27 21:29:15 - ERROR - An error occurred while processing
+2025-01-27 21:29:15 - INFO - Flask application is starting
+2025-01-27 21:29:15 - WARNING - This is a warning
+2025-01-27 21:29:15 - ERROR - An error occurred while processing
+2025-01-27 21:29:15 - INFO - Flask application is starting
+2025-01-27 21:29:15 - WARNING - This is a warning
+2025-01-27 21:29:15 - ERROR - An error occurred while processing
+2025-01-27 21:29:40 - INFO - Flask application is starting
+2025-01-27 21:29:40 - WARNING - This is a warning
+2025-01-27 21:29:40 - ERROR - An error occurred while processing
+2025-01-27 21:29:40 - INFO - Flask application is starting
+2025-01-27 21:29:40 - WARNING - This is a warning
+2025-01-27 21:29:40 - ERROR - An error occurred while processing
+2025-01-27 21:29:40 - INFO - Flask application is starting
+2025-01-27 21:29:40 - WARNING - This is a warning
+2025-01-27 21:29:40 - ERROR - An error occurred while processing
+2025-01-27 21:29:40 - INFO - Flask application is starting
+2025-01-27 21:29:40 - WARNING - This is a warning
+2025-01-27 21:29:40 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Flask application is starting
+2025-01-27 21:29:52 - WARNING - This is a warning
+2025-01-27 21:29:52 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Flask application is starting
+2025-01-27 21:29:52 - WARNING - This is a warning
+2025-01-27 21:29:52 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Flask application is starting
+2025-01-27 21:29:52 - WARNING - This is a warning
+2025-01-27 21:29:52 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Flask application is starting
+2025-01-27 21:29:52 - WARNING - This is a warning
+2025-01-27 21:29:52 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Flask application is starting
+2025-01-27 21:29:52 - WARNING - This is a warning
+2025-01-27 21:29:52 - ERROR - An error occurred while processing
+2025-01-27 21:29:52 - INFO - Starting Flask application
+2025-01-27 21:29:52 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:29:52 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:29:54 - INFO - 127.0.0.1 - - [27/Jan/2025 21:29:54] "[35m[1mPOST /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 21:29:54 - INFO - 127.0.0.1 - - [27/Jan/2025 21:29:54] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:29:54 - INFO - 127.0.0.1 - - [27/Jan/2025 21:29:54] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:29:54 - INFO - 127.0.0.1 - - [27/Jan/2025 21:29:54] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=SNgUzqBOtR1CF9yUXqOc HTTP/1.1" 200 -
+2025-01-27 21:31:13 - INFO - Flask application is starting
+2025-01-27 21:31:13 - WARNING - This is a warning
+2025-01-27 21:31:13 - ERROR - An error occurred while processing
+2025-01-27 21:31:13 - INFO - Flask application is starting
+2025-01-27 21:31:13 - WARNING - This is a warning
+2025-01-27 21:31:13 - ERROR - An error occurred while processing
+2025-01-27 21:31:13 - INFO - Flask application is starting
+2025-01-27 21:31:13 - WARNING - This is a warning
+2025-01-27 21:31:13 - ERROR - An error occurred while processing
+2025-01-27 21:31:13 - INFO - Flask application is starting
+2025-01-27 21:31:13 - WARNING - This is a warning
+2025-01-27 21:31:13 - ERROR - An error occurred while processing
+2025-01-27 21:31:13 - INFO - Flask application is starting
+2025-01-27 21:31:13 - WARNING - This is a warning
+2025-01-27 21:31:13 - ERROR - An error occurred while processing
+2025-01-27 21:31:13 - INFO - Starting Flask application
+2025-01-27 21:31:13 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:31:13 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:31:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:31:15] "[35m[1mPOST /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 21:31:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:31:15] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:31:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:31:15] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:31:15 - INFO - 127.0.0.1 - - [27/Jan/2025 21:31:15] "GET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=YyLW6ZnyLLlylRksm1vu HTTP/1.1" 200 -
+2025-01-27 21:32:28 - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:28] "[31m[1mPOST /auth/customers HTTP/1.1[0m" 400 -
+2025-01-27 21:32:44 - INFO - 127.0.0.1 - - [27/Jan/2025 21:32:44] "[31m[1mPOST /auth/customers HTTP/1.1[0m" 400 -
+2025-01-27 21:33:40 - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:40] "[31m[1mPOST /auth/customers HTTP/1.1[0m" 400 -
+2025-01-27 21:33:52 - INFO - 127.0.0.1 - - [27/Jan/2025 21:33:52] "[31m[1mPOST /auth/customers HTTP/1.1[0m" 400 -
+2025-01-27 21:34:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:34:53] "[35m[1mPOST /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 21:34:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:34:53] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:34:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:34:53] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:34:53 - INFO - 127.0.0.1 - - [27/Jan/2025 21:34:53] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=YyLW6ZnyLLlylRksm1vu HTTP/1.1[0m" 304 -
+2025-01-27 21:35:04 - INFO - 127.0.0.1 - - [27/Jan/2025 21:35:04] "[35m[1mPOST /auth/customers HTTP/1.1[0m" 500 -
+2025-01-27 21:35:05 - INFO - 127.0.0.1 - - [27/Jan/2025 21:35:05] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:35:05 - INFO - 127.0.0.1 - - [27/Jan/2025 21:35:05] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:35:05 - INFO - 127.0.0.1 - - [27/Jan/2025 21:35:05] "[36mGET /auth/customers?__debugger__=yes&cmd=resource&f=console.png&s=YyLW6ZnyLLlylRksm1vu HTTP/1.1[0m" 304 -
+2025-01-27 21:52:17 - INFO - Flask application is starting
+2025-01-27 21:52:17 - WARNING - This is a warning
+2025-01-27 21:52:17 - ERROR - An error occurred while processing
+2025-01-27 21:52:17 - INFO - Flask application is starting
+2025-01-27 21:52:17 - WARNING - This is a warning
+2025-01-27 21:52:17 - ERROR - An error occurred while processing
+2025-01-27 21:52:17 - INFO - Flask application is starting
+2025-01-27 21:52:17 - WARNING - This is a warning
+2025-01-27 21:52:17 - ERROR - An error occurred while processing
+2025-01-27 21:52:17 - INFO - Flask application is starting
+2025-01-27 21:52:17 - WARNING - This is a warning
+2025-01-27 21:52:17 - ERROR - An error occurred while processing
+2025-01-27 21:52:17 - INFO - Flask application is starting
+2025-01-27 21:52:17 - WARNING - This is a warning
+2025-01-27 21:52:17 - ERROR - An error occurred while processing
+2025-01-27 21:52:17 - INFO - Starting Flask application
+2025-01-27 21:52:17 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:52:17 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:52:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:36] "[35m[1mPUT /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:52:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:36] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:52:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:36] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:52:36 - INFO - 127.0.0.1 - - [27/Jan/2025 21:52:36] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=LNHVpDkyHb3hYX5Ng8Ze HTTP/1.1" 200 -
+2025-01-27 21:52:59 - INFO - Flask application is starting
+2025-01-27 21:52:59 - WARNING - This is a warning
+2025-01-27 21:52:59 - ERROR - An error occurred while processing
+2025-01-27 21:52:59 - INFO - Flask application is starting
+2025-01-27 21:52:59 - WARNING - This is a warning
+2025-01-27 21:52:59 - ERROR - An error occurred while processing
+2025-01-27 21:52:59 - INFO - Flask application is starting
+2025-01-27 21:52:59 - WARNING - This is a warning
+2025-01-27 21:52:59 - ERROR - An error occurred while processing
+2025-01-27 21:52:59 - INFO - Flask application is starting
+2025-01-27 21:52:59 - WARNING - This is a warning
+2025-01-27 21:52:59 - ERROR - An error occurred while processing
+2025-01-27 21:52:59 - INFO - Flask application is starting
+2025-01-27 21:52:59 - WARNING - This is a warning
+2025-01-27 21:52:59 - ERROR - An error occurred while processing
+2025-01-27 21:52:59 - INFO - Starting Flask application
+2025-01-27 21:52:59 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:52:59 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:53:00 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:00] "[35m[1mPUT /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:53:00 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:00] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:53:00 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:00] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:53:00 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:00] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=EIYTJ9j1iPVUL7zfCl9J HTTP/1.1" 200 -
+2025-01-27 21:53:39 - INFO - Flask application is starting
+2025-01-27 21:53:39 - WARNING - This is a warning
+2025-01-27 21:53:39 - ERROR - An error occurred while processing
+2025-01-27 21:53:39 - INFO - Flask application is starting
+2025-01-27 21:53:39 - WARNING - This is a warning
+2025-01-27 21:53:39 - ERROR - An error occurred while processing
+2025-01-27 21:53:40 - INFO - Flask application is starting
+2025-01-27 21:53:40 - WARNING - This is a warning
+2025-01-27 21:53:40 - ERROR - An error occurred while processing
+2025-01-27 21:53:40 - INFO - Flask application is starting
+2025-01-27 21:53:40 - WARNING - This is a warning
+2025-01-27 21:53:40 - ERROR - An error occurred while processing
+2025-01-27 21:53:40 - INFO - Flask application is starting
+2025-01-27 21:53:40 - WARNING - This is a warning
+2025-01-27 21:53:40 - ERROR - An error occurred while processing
+2025-01-27 21:53:40 - INFO - Starting Flask application
+2025-01-27 21:53:40 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:53:40 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:53:42 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:42] "[35m[1mPUT /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:53:42 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:42] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:53:42 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:42] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:53:42 - INFO - 127.0.0.1 - - [27/Jan/2025 21:53:42] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=yMKuBtMf7u3kfofX6QiV HTTP/1.1" 200 -
+2025-01-27 21:54:38 - INFO - Flask application is starting
+2025-01-27 21:54:38 - WARNING - This is a warning
+2025-01-27 21:54:38 - ERROR - An error occurred while processing
+2025-01-27 21:54:38 - INFO - Flask application is starting
+2025-01-27 21:54:38 - WARNING - This is a warning
+2025-01-27 21:54:38 - ERROR - An error occurred while processing
+2025-01-27 21:54:39 - INFO - Flask application is starting
+2025-01-27 21:54:39 - WARNING - This is a warning
+2025-01-27 21:54:39 - ERROR - An error occurred while processing
+2025-01-27 21:54:39 - INFO - Flask application is starting
+2025-01-27 21:54:39 - WARNING - This is a warning
+2025-01-27 21:54:39 - ERROR - An error occurred while processing
+2025-01-27 21:54:39 - INFO - Flask application is starting
+2025-01-27 21:54:39 - WARNING - This is a warning
+2025-01-27 21:54:39 - ERROR - An error occurred while processing
+2025-01-27 21:54:39 - INFO - Starting Flask application
+2025-01-27 21:54:39 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:54:39 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:54:43 - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:43] "[35m[1mPUT /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:54:43 - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:43] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:54:43 - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:43] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:54:43 - INFO - 127.0.0.1 - - [27/Jan/2025 21:54:43] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=ftOatU0v4ugA3jkMS6lo HTTP/1.1" 200 -
+2025-01-27 21:57:05 - INFO - Flask application is starting
+2025-01-27 21:57:05 - WARNING - This is a warning
+2025-01-27 21:57:05 - ERROR - An error occurred while processing
+2025-01-27 21:57:05 - INFO - Flask application is starting
+2025-01-27 21:57:05 - WARNING - This is a warning
+2025-01-27 21:57:05 - ERROR - An error occurred while processing
+2025-01-27 21:57:05 - INFO - Flask application is starting
+2025-01-27 21:57:05 - WARNING - This is a warning
+2025-01-27 21:57:05 - ERROR - An error occurred while processing
+2025-01-27 21:57:05 - INFO - Flask application is starting
+2025-01-27 21:57:05 - WARNING - This is a warning
+2025-01-27 21:57:05 - ERROR - An error occurred while processing
+2025-01-27 21:57:05 - INFO - Flask application is starting
+2025-01-27 21:57:05 - WARNING - This is a warning
+2025-01-27 21:57:05 - ERROR - An error occurred while processing
+2025-01-27 21:57:05 - INFO - Starting Flask application
+2025-01-27 21:57:05 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:57:05 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:57:07 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:07] "[35m[1mPUT /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 21:57:07 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:07] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 21:57:07 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:07] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 21:57:07 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:07] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=y829ipXHMms3tyIixJTE HTTP/1.1" 200 -
+2025-01-27 21:57:30 - INFO - Flask application is starting
+2025-01-27 21:57:30 - WARNING - This is a warning
+2025-01-27 21:57:30 - ERROR - An error occurred while processing
+2025-01-27 21:57:30 - INFO - Flask application is starting
+2025-01-27 21:57:30 - WARNING - This is a warning
+2025-01-27 21:57:30 - ERROR - An error occurred while processing
+2025-01-27 21:57:30 - INFO - Flask application is starting
+2025-01-27 21:57:30 - WARNING - This is a warning
+2025-01-27 21:57:30 - ERROR - An error occurred while processing
+2025-01-27 21:57:30 - INFO - Flask application is starting
+2025-01-27 21:57:30 - WARNING - This is a warning
+2025-01-27 21:57:30 - ERROR - An error occurred while processing
+2025-01-27 21:57:30 - INFO - Flask application is starting
+2025-01-27 21:57:30 - WARNING - This is a warning
+2025-01-27 21:57:30 - ERROR - An error occurred while processing
+2025-01-27 21:57:30 - INFO - Starting Flask application
+2025-01-27 21:57:30 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:57:30 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:57:32 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:32] "PUT /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 21:57:42 - INFO - 127.0.0.1 - - [27/Jan/2025 21:57:42] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 21:58:23 - INFO - Flask application is starting
+2025-01-27 21:58:23 - WARNING - This is a warning
+2025-01-27 21:58:23 - ERROR - An error occurred while processing
+2025-01-27 21:58:23 - INFO - Flask application is starting
+2025-01-27 21:58:23 - WARNING - This is a warning
+2025-01-27 21:58:23 - ERROR - An error occurred while processing
+2025-01-27 21:58:23 - INFO - Flask application is starting
+2025-01-27 21:58:23 - WARNING - This is a warning
+2025-01-27 21:58:23 - ERROR - An error occurred while processing
+2025-01-27 21:58:23 - INFO - Flask application is starting
+2025-01-27 21:58:23 - WARNING - This is a warning
+2025-01-27 21:58:23 - ERROR - An error occurred while processing
+2025-01-27 21:58:23 - INFO - Flask application is starting
+2025-01-27 21:58:23 - WARNING - This is a warning
+2025-01-27 21:58:23 - ERROR - An error occurred while processing
+2025-01-27 21:58:23 - INFO - Starting Flask application
+2025-01-27 21:58:23 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 21:58:23 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 21:58:44 - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:44] "PUT /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 21:58:47 - INFO - 127.0.0.1 - - [27/Jan/2025 21:58:47] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:09:09 - INFO - Flask application is starting
+2025-01-27 22:09:09 - WARNING - This is a warning
+2025-01-27 22:09:09 - ERROR - An error occurred while processing
+2025-01-27 22:09:09 - INFO - Flask application is starting
+2025-01-27 22:09:09 - WARNING - This is a warning
+2025-01-27 22:09:09 - ERROR - An error occurred while processing
+2025-01-27 22:09:09 - INFO - Flask application is starting
+2025-01-27 22:09:09 - WARNING - This is a warning
+2025-01-27 22:09:09 - ERROR - An error occurred while processing
+2025-01-27 22:09:09 - INFO - Flask application is starting
+2025-01-27 22:09:09 - WARNING - This is a warning
+2025-01-27 22:09:09 - ERROR - An error occurred while processing
+2025-01-27 22:09:09 - INFO - Flask application is starting
+2025-01-27 22:09:09 - WARNING - This is a warning
+2025-01-27 22:09:09 - ERROR - An error occurred while processing
+2025-01-27 22:09:09 - INFO - Starting Flask application
+2025-01-27 22:09:09 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:09:09 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:09:39 - INFO - 127.0.0.1 - - [27/Jan/2025 22:09:39] "[33mGET /customers HTTP/1.1[0m" 404 -
+2025-01-27 22:10:51 - INFO - 127.0.0.1 - - [27/Jan/2025 22:10:51] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 22:12:09 - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:09] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:12:14 - INFO - 127.0.0.1 - - [27/Jan/2025 22:12:14] "GET /auth/customers/1 HTTP/1.1" 200 -
+2025-01-27 22:13:33 - INFO - 127.0.0.1 - - [27/Jan/2025 22:13:33] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:14:42 - INFO - Flask application is starting
+2025-01-27 22:14:42 - WARNING - This is a warning
+2025-01-27 22:14:42 - ERROR - An error occurred while processing
+2025-01-27 22:14:42 - INFO - Flask application is starting
+2025-01-27 22:14:42 - WARNING - This is a warning
+2025-01-27 22:14:42 - ERROR - An error occurred while processing
+2025-01-27 22:14:42 - INFO - Flask application is starting
+2025-01-27 22:14:42 - WARNING - This is a warning
+2025-01-27 22:14:42 - ERROR - An error occurred while processing
+2025-01-27 22:14:42 - INFO - Flask application is starting
+2025-01-27 22:14:42 - WARNING - This is a warning
+2025-01-27 22:14:42 - ERROR - An error occurred while processing
+2025-01-27 22:14:42 - INFO - Flask application is starting
+2025-01-27 22:14:42 - WARNING - This is a warning
+2025-01-27 22:14:42 - ERROR - An error occurred while processing
+2025-01-27 22:14:42 - INFO - Starting Flask application
+2025-01-27 22:14:42 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:14:42 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:14:49 - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "[35m[1mGET /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 22:14:49 - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:14:49 - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 22:14:49 - INFO - 127.0.0.1 - - [27/Jan/2025 22:14:49] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=7DsMLACfOtiQf3EYBEP6 HTTP/1.1" 200 -
+2025-01-27 22:15:16 - INFO - Flask application is starting
+2025-01-27 22:15:16 - WARNING - This is a warning
+2025-01-27 22:15:16 - ERROR - An error occurred while processing
+2025-01-27 22:15:16 - INFO - Flask application is starting
+2025-01-27 22:15:16 - WARNING - This is a warning
+2025-01-27 22:15:16 - ERROR - An error occurred while processing
+2025-01-27 22:15:16 - INFO - Flask application is starting
+2025-01-27 22:15:16 - WARNING - This is a warning
+2025-01-27 22:15:16 - ERROR - An error occurred while processing
+2025-01-27 22:15:16 - INFO - Flask application is starting
+2025-01-27 22:15:16 - WARNING - This is a warning
+2025-01-27 22:15:16 - ERROR - An error occurred while processing
+2025-01-27 22:15:16 - INFO - Flask application is starting
+2025-01-27 22:15:16 - WARNING - This is a warning
+2025-01-27 22:15:16 - ERROR - An error occurred while processing
+2025-01-27 22:15:17 - INFO - Starting Flask application
+2025-01-27 22:15:17 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:15:17 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:15:18 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:18] "[35m[1mGET /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 22:15:19 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:19] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2025-01-27 22:15:19 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:19] "[36mGET /auth/customers/2?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2025-01-27 22:15:19 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:19] "GET /auth/customers/2?__debugger__=yes&cmd=resource&f=console.png&s=zyKqMtIBzkScmutMMVDv HTTP/1.1" 200 -
+2025-01-27 22:15:31 - INFO - Flask application is starting
+2025-01-27 22:15:31 - WARNING - This is a warning
+2025-01-27 22:15:31 - ERROR - An error occurred while processing
+2025-01-27 22:15:31 - INFO - Flask application is starting
+2025-01-27 22:15:31 - WARNING - This is a warning
+2025-01-27 22:15:31 - ERROR - An error occurred while processing
+2025-01-27 22:15:31 - INFO - Flask application is starting
+2025-01-27 22:15:31 - WARNING - This is a warning
+2025-01-27 22:15:31 - ERROR - An error occurred while processing
+2025-01-27 22:15:31 - INFO - Flask application is starting
+2025-01-27 22:15:31 - WARNING - This is a warning
+2025-01-27 22:15:31 - ERROR - An error occurred while processing
+2025-01-27 22:15:31 - INFO - Flask application is starting
+2025-01-27 22:15:31 - WARNING - This is a warning
+2025-01-27 22:15:31 - ERROR - An error occurred while processing
+2025-01-27 22:15:31 - INFO - Starting Flask application
+2025-01-27 22:15:31 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:15:31 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:15:33 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:33] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:15:43 - INFO - 127.0.0.1 - - [27/Jan/2025 22:15:43] "GET /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:16:49 - INFO - Flask application is starting
+2025-01-27 22:16:49 - WARNING - This is a warning
+2025-01-27 22:16:49 - ERROR - An error occurred while processing
+2025-01-27 22:16:49 - INFO - Flask application is starting
+2025-01-27 22:16:49 - WARNING - This is a warning
+2025-01-27 22:16:49 - ERROR - An error occurred while processing
+2025-01-27 22:16:49 - INFO - Flask application is starting
+2025-01-27 22:16:49 - WARNING - This is a warning
+2025-01-27 22:16:49 - ERROR - An error occurred while processing
+2025-01-27 22:16:49 - INFO - Flask application is starting
+2025-01-27 22:16:49 - WARNING - This is a warning
+2025-01-27 22:16:49 - ERROR - An error occurred while processing
+2025-01-27 22:16:49 - INFO - Flask application is starting
+2025-01-27 22:16:49 - WARNING - This is a warning
+2025-01-27 22:16:49 - ERROR - An error occurred while processing
+2025-01-27 22:16:50 - INFO - Starting Flask application
+2025-01-27 22:16:50 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:16:50 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:16:56 - INFO - 127.0.0.1 - - [27/Jan/2025 22:16:56] "OPTIONS /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:16:56 - INFO - 127.0.0.1 - - [27/Jan/2025 22:16:56] "DELETE /auth/customers/2 HTTP/1.1" 200 -
+2025-01-27 22:17:03 - INFO - 127.0.0.1 - - [27/Jan/2025 22:17:03] "[35m[1mGET /auth/customers/2 HTTP/1.1[0m" 500 -
+2025-01-27 22:22:38 - INFO - Flask application is starting
+2025-01-27 22:22:38 - WARNING - This is a warning
+2025-01-27 22:22:38 - ERROR - An error occurred while processing
+2025-01-27 22:22:38 - INFO - Flask application is starting
+2025-01-27 22:22:38 - WARNING - This is a warning
+2025-01-27 22:22:38 - ERROR - An error occurred while processing
+2025-01-27 22:22:38 - INFO - Flask application is starting
+2025-01-27 22:22:38 - WARNING - This is a warning
+2025-01-27 22:22:38 - ERROR - An error occurred while processing
+2025-01-27 22:22:38 - INFO - Flask application is starting
+2025-01-27 22:22:38 - WARNING - This is a warning
+2025-01-27 22:22:38 - ERROR - An error occurred while processing
+2025-01-27 22:22:38 - INFO - Flask application is starting
+2025-01-27 22:22:38 - WARNING - This is a warning
+2025-01-27 22:22:38 - ERROR - An error occurred while processing
+2025-01-27 22:22:38 - INFO - Starting Flask application
+2025-01-27 22:22:38 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:22:38 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:22:46 - INFO - 127.0.0.1 - - [27/Jan/2025 22:22:46] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 22:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 22:22:56] "OPTIONS /auth/customers/3 HTTP/1.1" 200 -
+2025-01-27 22:22:56 - INFO - 127.0.0.1 - - [27/Jan/2025 22:22:56] "DELETE /auth/customers/3 HTTP/1.1" 200 -
+2025-01-27 22:23:00 - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:00] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 22:23:06 - INFO - 127.0.0.1 - - [27/Jan/2025 22:23:06] "[35m[1mGET /auth/customers/3 HTTP/1.1[0m" 500 -
+2025-01-27 22:23:46 - INFO - Flask application is starting
+2025-01-27 22:23:46 - WARNING - This is a warning
+2025-01-27 22:23:46 - ERROR - An error occurred while processing
+2025-01-27 22:23:46 - INFO - Flask application is starting
+2025-01-27 22:23:46 - WARNING - This is a warning
+2025-01-27 22:23:46 - ERROR - An error occurred while processing
+2025-01-27 22:23:46 - INFO - Flask application is starting
+2025-01-27 22:23:46 - WARNING - This is a warning
+2025-01-27 22:23:46 - ERROR - An error occurred while processing
+2025-01-27 22:23:46 - INFO - Flask application is starting
+2025-01-27 22:23:46 - WARNING - This is a warning
+2025-01-27 22:23:46 - ERROR - An error occurred while processing
+2025-01-27 22:23:46 - INFO - Flask application is starting
+2025-01-27 22:23:46 - WARNING - This is a warning
+2025-01-27 22:23:46 - ERROR - An error occurred while processing
+2025-01-27 22:23:46 - INFO - Starting Flask application
+2025-01-27 22:23:46 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:23:46 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:24:42 - INFO - Flask application is starting
+2025-01-27 22:24:42 - WARNING - This is a warning
+2025-01-27 22:24:42 - ERROR - An error occurred while processing
+2025-01-27 22:24:42 - INFO - Flask application is starting
+2025-01-27 22:24:42 - WARNING - This is a warning
+2025-01-27 22:24:42 - ERROR - An error occurred while processing
+2025-01-27 22:24:42 - INFO - Flask application is starting
+2025-01-27 22:24:42 - WARNING - This is a warning
+2025-01-27 22:24:42 - ERROR - An error occurred while processing
+2025-01-27 22:24:42 - INFO - Flask application is starting
+2025-01-27 22:24:42 - WARNING - This is a warning
+2025-01-27 22:24:42 - ERROR - An error occurred while processing
+2025-01-27 22:24:42 - INFO - Flask application is starting
+2025-01-27 22:24:42 - WARNING - This is a warning
+2025-01-27 22:24:42 - ERROR - An error occurred while processing
+2025-01-27 22:24:42 - INFO - Starting Flask application
+2025-01-27 22:24:42 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2025-01-27 22:24:42 - INFO - [33mPress CTRL+C to quit[0m
+2025-01-27 22:24:56 - INFO - 127.0.0.1 - - [27/Jan/2025 22:24:56] "GET /auth/customers/5 HTTP/1.1" 200 -
+2025-01-27 22:25:01 - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:01] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 22:25:09 - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:09] "OPTIONS /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:25:09 - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:09] "DELETE /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:25:12 - INFO - 127.0.0.1 - - [27/Jan/2025 22:25:12] "GET /auth/customers HTTP/1.1" 200 -
+2025-01-27 22:26:57 - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:57] "OPTIONS /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:26:57 - INFO - 127.0.0.1 - - [27/Jan/2025 22:26:57] "DELETE /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:28:04 - INFO - 127.0.0.1 - - [27/Jan/2025 22:28:04] "OPTIONS /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:28:04 - INFO - 127.0.0.1 - - [27/Jan/2025 22:28:04] "DELETE /auth/customers/4 HTTP/1.1" 200 -
+2025-01-27 22:28:17 - INFO - 127.0.0.1 - - [27/Jan/2025 22:28:17] "[35m[1mGET /auth/customers/1 HTTP/1.1[0m" 500 -
