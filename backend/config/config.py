@@ -2,7 +2,7 @@ import os
 from datetime import timedelta
 
 class Config:
-    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:yourpassword@localhost/p2libraryjb"
+    SQLALCHEMY_DATABASE_URI = "mysql+pymysql://root:***********@localhost/p2libraryjb"
     SQLALCHEMY_TRACK_MODIFICATIONS = False
     
     # JWT Secret Key - Using environment variable with a fallback for security and token expiry
