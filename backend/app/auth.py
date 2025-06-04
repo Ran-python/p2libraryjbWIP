@@ -14,6 +14,52 @@ jwt = JWTManager()
 # Static mapping of librarian username
 LIBRARIAN_USERNAME = "Ran"  # Librarian root user
 
+# ------------------------------------------------------------
+# Login Endpoint
+# ------------------------------------------------------------
+
+@auth_bp.route('/login', methods=['POST'])
+def login():
+    """Authenticate user and return a JWT token."""
+    try:
+        data = request.get_json()
+        if not data or 'username' not in data or 'password' not in data:
+            log_warning("Invalid login attempt - missing fields")
+            return jsonify({"error": "Missing username or password"}), 400
+
+        username = data['username']
+        password = data['password']
+
+        # Determine role and fetch user
+        role = 'customer'
+        if username == LIBRARIAN_USERNAME:
+            role = 'librarian'
+
+        user = Customer.query.filter_by(name=username).first()
+        if not user or not check_password_hash(user.password_hash, password):
+            log_warning(f"Invalid credentials for user {username}")
+            return jsonify({"error": "Invalid credentials"}), 401
+
+        # Revoke previous token if exists
+        if user.token:
+            log_info(f"User {username} had an active session, revoking old token.")
+
+        access_token = create_access_token(identity={
+            'id': user.id,
+            'username': user.name,
+            'role': role
+        })
+
+        user.token = access_token
+        db.session.commit()
+
+        log_info(f"User {username} logged in successfully as {role}")
+        return jsonify({"access_token": access_token, "role": role}), 200
+
+    except Exception as e:
+        log_error(f"Error during login: {str(e)}")
+        return jsonify({"error": "Internal server error"}), 500
+
 # Function to initialize JWT in the Flask app
 def init_auth(app):
     app.config['JWT_SECRET_KEY'] = Config.JWT_SECRET_KEY
